@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    width: 100%;
+    height: 30px;
+    background-color: #F4F5F5;
+}
+
+.nav-itme {
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+.img p {
+    font-size: 14px;
+    padding-left: 5px;
+    font-family: sans-serif;
+    color: #626580;
+
+
+}
+
+.img p span {
+    margin-top: -1px;
+    position: absolute;
+    padding-left: 5px;
+    color: black;
+
+}
+
+.img img {
+    height: 25px;
+    width: 22px;
+}
+
+.topshir {
+    padding-left: 100px;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+.kun {
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-left: 150px;
+    color: #626580;
+
+}
+
+.savol {
+    display: flex;
+    padding-left: 125px;
+    color: #626580;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.uz {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    color: #626580;
+    font-family: sans-serif;
+    /* font-size: 14px */
+}
+
+.uz img {
+    width: 30px;
+}
+
+/* nav-itme */
+
+.navitme {
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.katalog {
+    width: 120px;
+    height: 40px;
+    background-color: #EAEAF9;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s;
+    margin-left: 25px;
+}
+
+.katalog:hover {
+    background-color: #e4e4f9;
+
+}
+
+.uzm img {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.katalog img {
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+.katalog p {
+    padding-left: 10px;
+    color: #3333CC;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+input {
+    border: 1px solid #D1D2D3;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    border-radius: 4px;
+    padding-left: 25px;
+    outline: none;
+}
+
+.btn {
+    position: absolute;
+    margin-left: -71.4px;
+    height: 38px;
+    width: 70px;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 1.3px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 17px;
+    padding: 2px 0 0 5px;
+
+}
+
+.kirsh {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    margin-left: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.kirsh:hover {
+    background-color: #EFEFEF;
+}
+
+.sara:hover {
+    background-color: #EFEFEF;
+}
+
+.savat:hover {
+    background-color: #EFEFEF;
+}
+
+.kirsh img {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0px;
+}
+
+.savat {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+.savat img {
+    width: 21px;
+    height: 21px;
+    margin: 0 8px 0 0px;
+
+}
+
+.sara {
+    display: flex;
+    width: 140px;
+    height: 40px;
+    align-items: center;
+    margin-left: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+.sara img {
+    width: 22px;
+    height: 20.7px;
+    margin: 0 8px 0 0px;
+
+}
+
+::placeholder {
+    font-size: 14.7px;
+}
+
+/* nav - menyu */
+
+.navmenyu {
+    width: 1250px;
+    height: 30px;
+    /* background-color: #3333CC; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nav1 img {
+    width: 25px;
+    height: 25px;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav2 {
+    font-size: 14.7px;
+    font-family: sans-serif;
+    padding-left: 21.5px;
+    color: #737373;
+    cursor: pointer;
+}
+
+/* efkt */
+.efkt {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt {
+    width: 74px;
+    transition: .4s;
+
+}
+
+.efkt1 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt1 {
+    width: 102px;
+    transition: .4s;
+
+}
+
+
+.efkt2 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt2 {
+    width: 40px;
+    transition: .4s;
+
+}
+
+
+.efkt3 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt3 {
+    width: 78px;
+    transition: .4s;
+
+}
+
+.efkt4 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt4 {
+    width: 86px;
+    transition: .4s;
+
+}
+
+.efkt5 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt5 {
+    width: 58px;
+    transition: .4s;
+
+}
+
+
+
+.efkt6 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt6 {
+    width: 70px;
+    transition: .4s;
+
+}
+
+
+.efkt7 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt7 {
+    width: 145px;
+    transition: .4s;
+
+}
+
+
+.efkt8 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt8 {
+    width: 142px;
+    transition: .4s;
+
+}
+
+.efkt9 {
+    width: 0px;
+    height: 1.6px;
+    background-color: black;
+    margin-top: 5px;
+    position: absolute;
+    transition: .4s;
+}
+
+.nav2:hover .efkt9 {
+    width: 80px;
+    transition: .4s;
+
+}
+
+
+.nav2:hover {
+    color: black;
+}
+
+.nasiya {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.nav2 i {
+    font-size: 14px;
+    padding: 4px 0 0 5px;
+    position: absolute;
+}
