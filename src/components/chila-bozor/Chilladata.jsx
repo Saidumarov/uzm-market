@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Chillamenyu from "./Chillamenyu";
 import Chilla from "./Chilla";
-
-
+import yog from "../../assets/yog/yog.jpg";
+import Loadindata from "./Loadindata";
 
 const Chilladata = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -10,11 +10,12 @@ const Chilladata = () => {
   const childata = [
     {
       id: 1,
-      body: `salom`,
-      title: `qali`,
-      img: `fefwfefwe`,
-      narx: 200202,
-      narxno: 2020,
+      body: `Kungaboqar yog'i Sofia, tozalangan va deodorizatsiyalangan, 1 litr`,
+      title: `Chilla Bozor `,
+      img: yog,
+      narx: 14,
+      narxno: 19,
+      oyiga: `1 680 `,
     },
     {
       id: 2,
@@ -32,6 +33,13 @@ const Chilladata = () => {
       narx: 200202,
       narxno: 2020,
     },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
   ];
 
   useEffect(() => {
@@ -43,18 +51,17 @@ const Chilladata = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div>
+    <div className="data">
       <Chilla />
 
-      {isLoading ? (
-        <p>ddawdwq</p>
-      ) : (
-        delayedData.map((item) => <Chillamenyu key={item.id} {...item} />)
-        
-      )
-      }
-      
-
+      <div >
+        {isLoading ? (
+  <p>        <Loadindata/></p>
+        ) : ( <div className="data1">
+           { delayedData.map((item) => <Chillamenyu key={item.id} {...item} />)}
+        </div>
+        )}
+      </div>
     </div>
   );
 };

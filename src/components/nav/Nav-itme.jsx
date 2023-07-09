@@ -4,6 +4,7 @@ import katalog from "../../assets/katalog.jpg";
 import kirish from "../../assets/kir.png";
 import layk from "../../assets/layk.png";
 import savat from "../../assets/sumka.png";
+import { Link } from "react-router-dom";
 const NavItme = () => {
   const inputref = useRef(null);
   const click = (e) => {
@@ -19,7 +20,7 @@ const NavItme = () => {
     <div>
       <div className="navitme">
         <div className="uzm">
-          <img src={uzm} alt="" />
+       <Link to='/'><img src={uzm} alt="" /></Link>
         </div>
         <div className="katalog">
           <img src={katalog} alt="" />

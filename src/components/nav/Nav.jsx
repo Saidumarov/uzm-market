@@ -5,6 +5,7 @@ import img from "../../assets/la.png";
 import uz from "../../assets/uz.png";
 import NavItme from "./Nav-itme";
 import Navmenyu from "./Nav-menyu";
+import BIz from "../Biz-Haqimizda/BIz";
 const Nav = () => {
   return (
     <div className="wrapper">
@@ -38,6 +39,7 @@ const Nav = () => {
       <NavItme />
       <Navmenyu/>
       <Outlet/>
+      <BIz/>
     </div>
   );
 };
