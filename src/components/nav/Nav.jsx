@@ -10,6 +10,9 @@ const Nav = () => {
   return (
     <div className="wrapper">
       <div className="nav">
+      <div className="kun1">
+            Buyurtmangizni 1 kunda bepul yetkazib beramiz!
+          </div>
         <div className="nav-itme">
           <div className="img">
             <img src={img} alt="" />
@@ -39,7 +42,7 @@ const Nav = () => {
       <NavItme />
       <Navmenyu/>
       <Outlet/>
-      <BIz/>
+      {/* <BIz/> */}
     </div>
   );
 };

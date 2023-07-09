@@ -5,7 +5,7 @@ import baho from "../../assets/baho.svg";
 import savat from "../../assets/savatcha.png";
 
 
-const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
+const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga ,}) => {
   return (
     <div>
       <Link to={`/post/roduct/single/${id}`} className="a">

@@ -4,11 +4,15 @@ import Loadingitme from "./Loadingitme";
 const Loadindata = () => {
   const load = [{}, {}, {}, {}, {},{}, {}, {}, {}, {}];
   return (
-    <div className="data1">
+    
+  <div>
+    <div className="cload"><div className="lo6"></div></div>
+      <div className="data1">
       {load.map((itme) => (
         <Loadingitme {...itme} />
       ))}
     </div>
+  </div>
   );
 };
 

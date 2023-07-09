@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import uzm1 from "../../assets/uzm1.svg";
 import uzm from "../../assets/uzm.svg";
 import katalog from "../../assets/katalog.jpg";
 import kirish from "../../assets/kir.png";
@@ -20,7 +21,9 @@ const NavItme = () => {
     <div>
       <div className="navitme">
         <div className="uzm">
-       <Link to='/'><img src={uzm} alt="" /></Link>
+       <Link to='/'><img src={uzm} alt="" className="uzmm1" />
+      <img src={uzm1} alt=""  className="uzmm"/>
+      </Link>
         </div>
         <div className="katalog">
           <img src={katalog} alt="" />

@@ -12,11 +12,11 @@ const Navmenyu = () => {
           Elektronika
           <div className="efkt"></div>
         </div>
-        <div className="nav2">
+        <div className="nav2" id="nav3">
           Maishiy-texnika
           <div className="efkt1"></div>
         </div>
-        <div className="nav2">
+        <div className="nav2" id="nav2">
           Kiyim
           <div className="efkt2"></div>
         </div>
@@ -36,7 +36,7 @@ const Navmenyu = () => {
           Salomatlik
           <div className="efkt6"></div>
         </div>
-        <div className="nav2">
+        <div className="nav2" id="nav1">
           Uy-roʻzgʻor-buyumlari
           <div className="efkt7"></div>
         </div>

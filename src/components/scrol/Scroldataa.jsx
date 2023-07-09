@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Scrol from "./Scrol";
-import img1 from "../../assets/manzura.jpg";
-import img2 from "../../assets/vel.jpg";
-import img3 from "../../assets/telvi.jpg";
-import img4 from "../../assets/yog'.jpg";
-import img5 from "../../assets/sumka.jpg";
+import img1 from "../../assets/manzura1.jpg";
+import img2 from "../../assets/vel1.jpg";
+import img3 from "../../assets/telvi1.jpg";
+import img4 from "../../assets/yogg.jpg";
+import img5 from "../../assets/futa1.jpg";
 
-const Scroldata = () => {
+const Scroldataa = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [delayedData, setDelayedData] = useState([]);
 
@@ -18,9 +18,7 @@ const Scroldata = () => {
       img2: img3,
       img3: img4,
       img4: img5,
-      img5: img3,
-      img6: img4,
-      img7: img5,
+
     },
   ];
 
@@ -48,4 +46,4 @@ const Scroldata = () => {
   );
 };
 
-export default Scroldata;
+export default Scroldataa;

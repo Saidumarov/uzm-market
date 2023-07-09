@@ -10,7 +10,6 @@ import fut2 from "../../assets/futbolka/fut3.jpg";
 import lata from "../../assets/unversal/sum.jpg";
 import lata1 from "../../assets/unversal/sum.jpg";
 import lata2 from "../../assets/unversal/sum1.jpg";
-
 import baho from "../../assets/baho.svg";
 import olovv from "../../assets/olov.svg";
 import haftaa from "../../assets/hafta.png";
@@ -47,7 +46,7 @@ const Chilpage = () => {
     {
       id: 3,
       title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata,
+      img: lata1,
       img1: lata2,
       img2: lata,
       narx: 20,
@@ -56,14 +55,97 @@ const Chilpage = () => {
       oyiga: `  2 400 `,
       olov: 2,
       hafta: 481,
-
-      gsg: `Avtomobil old oynasi uchun quyoshtan himoya
-      Old oynasi uchun barqaror soyabon
-      Kir yuvish kukuni Зеленый чай Oq atirgul, qo'lda yuvish, 900 g
-      Suv sepadigan to'poncha Water Gun H-994A
-      Havo namlagich akkumulyatorli, rangli yoritgichli va metall korpusi
-      O'yin smartfon TECNO Pova Neo 2, 6/128 GB, NFC 2SIM
-      Quyoshdan himoya qiluvchi qo'lqoplar, quyoshdan himoyalangan kompressli yeng`,
+    },
+    {
+      id: 4,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 5,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 6,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 7,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 8,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 9,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
+    },
+    {
+      id: 10,
+      title: `Avtomobillar uchun mikrofiber latta `,
+      img: lata1,
+      img1: lata2,
+      img2: lata,
+      narx: 20,
+      narxno: 45,
+      sotuvchi: `      eshop `,
+      oyiga: `  2 400 `,
+      olov: 2,
+      hafta: 481,
     },
   ];
 
