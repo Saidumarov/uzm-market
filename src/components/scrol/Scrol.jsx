@@ -44,7 +44,7 @@ const Scrol = (itme) => {
     setStopa(true);
   };
 
-  let wiz = 20;
+  let wiz = 10;
 
   const [screenWidth, setScreenWidth] = useState(
     window.innerWidth || document.documentElement.clientWidth
@@ -60,10 +60,10 @@ const Scrol = (itme) => {
     };
   }, []);
 
-  if (screenWidth <= 1290) {
+  if (screenWidth < 1290) {
     wiz = 100;
   } else if (screenWidth > 800) {
-    wiz = 100;
+    wiz = 20;
 
   }
   return (

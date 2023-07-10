@@ -577,6 +577,15 @@ input {
 
     .uzmm1{
         margin-left: 30px;
+        position: relative;
+        z-index: 2;
+        
+    }
+    .uzmm{
+    
+        position: relative;
+        z-index: 2;
+        
     }
 
     form {

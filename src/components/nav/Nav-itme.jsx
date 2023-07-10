@@ -21,7 +21,8 @@ const NavItme = () => {
     <div>
       <div className="navitme">
         <div className="uzm">
-       <Link to='/'><img src={uzm} alt="" className="uzmm1" />
+       <Link to='/'>
+        <img src={uzm} alt="" className="uzmm1" />
       <img src={uzm1} alt=""  className="uzmm"/>
       </Link>
         </div>

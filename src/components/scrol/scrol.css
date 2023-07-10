@@ -127,3 +127,18 @@
         margin-top: 90px;
     }
 }
+
+
+@media screen and (max-width:650px) {
+
+    .scrol {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .scrol {
+        height: 320px;
+    }
+}
