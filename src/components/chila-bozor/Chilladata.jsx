@@ -120,7 +120,7 @@ const Chilladata = () => {
     const timer = setTimeout(() => {
       setDelayedData(childata);
       setIsLoading(false);
-    }, 200);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

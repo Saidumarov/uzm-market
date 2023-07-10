@@ -735,6 +735,10 @@ abbr span {
         width: 230px;
         height: 420px;
     }
+    .content1 {
+        width: 230px;
+        height: 420px;
+    }
     .data1 {
         display: grid;
         justify-content: space-between;
@@ -750,6 +754,10 @@ abbr span {
         height: 420px;
     }
 
+    .content1 {
+        width: 220px;
+        height: 420px;
+    }
 
 }
 
@@ -757,6 +765,10 @@ abbr span {
 @media screen and (max-width:480px) {
   
     .content {
+        width: 210px;
+        height: 430px;
+    }
+    .content1 {
         width: 210px;
         height: 430px;
     }
@@ -773,11 +785,19 @@ abbr span {
         width: 200px;
         height: 430px;
     }
+    .content1 {
+        width: 200px;
+        height: 430px;
+    }
+
 
     .conimg {
         width: 100%;
         height: 225px;
 
+    }
+    .load4{
+        margin-left: 80%;
     }
 
 }
@@ -785,6 +805,11 @@ abbr span {
 @media screen and (max-width:435px) {
   
     .content {
+        width: 190px;
+        height: 430px;
+    }
+      
+    .content1 {
         width: 190px;
         height: 430px;
     }
@@ -796,11 +821,20 @@ abbr span {
         width: 180px;
         height: 430px;
     }
+    .content1 {
+        width: 180px;
+        height: 430px;
+    }
 
 }
 
 @media screen and (max-width:405px) {
     .content {
+        width: 170px;
+        height: 435px;
+    }
+
+    .content1 {
         width: 170px;
         height: 435px;
     }

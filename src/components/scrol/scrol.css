@@ -16,6 +16,11 @@
     margin: 0 auto;
 }
 
+.scrrol11 {
+    width: 1250px;
+    margin: 0 auto;
+}
+
 .imgscrol img {
     width: 1250px;
     height: 408px;
@@ -110,6 +115,10 @@
 
 
     }
+    .scrrol11 {
+     display: none;
+    }
+    
 
     .imgscrol img {
         width: 100%;

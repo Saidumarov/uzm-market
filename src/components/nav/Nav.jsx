@@ -42,7 +42,7 @@ const Nav = () => {
       <NavItme />
       <Navmenyu/>
       <Outlet/>
-      {/* <BIz/> */}
+      <BIz/>
     </div>
   );
 };
