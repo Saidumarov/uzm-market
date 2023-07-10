@@ -26,11 +26,14 @@
     height: 408px;
     object-fit: cover;
     border-radius: 10px;
+    
 }
 
 .imgscrol {
     display: flex;
     transition: .4s;
+
+    
 
 }
 
@@ -125,7 +128,8 @@
         height: 408px;
         object-fit: cover;
         border-radius: 10px;
-        object-fit: cover;
+     display: grid;
+        
     }
 
 }
@@ -135,6 +139,8 @@
     .scrol {
         margin-top: 90px;
     }
+
+ 
 }
 
 
@@ -145,9 +151,24 @@
     }
 }
 
+
+@media screen and (max-width:550px) {
+
+    .scrol {
+        height: 300px;
+    }
+}
+
 @media screen and (max-width:450px) {
 
     .scrol {
-        height: 320px;
+        height: 250px;
+    }
+
+    .right{
+        margin-top: 20px;
+    }
+    .left{
+        margin-top: 20px;
     }
 }

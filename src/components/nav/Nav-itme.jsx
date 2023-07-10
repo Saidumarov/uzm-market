@@ -17,11 +17,16 @@ const NavItme = () => {
       inputref.current.value = "";
     }
   };
+
+  const click1 = (e) => {
+    e.preventDefault();
+
+  };
   return (
     <div>
       <div className="navitme">
         <div className="uzm">
-       <Link to='/'>
+       <Link to='/' onClick={click1}>
         <img src={uzm} alt="" className="uzmm1" />
       <img src={uzm1} alt=""  className="uzmm"/>
       </Link>

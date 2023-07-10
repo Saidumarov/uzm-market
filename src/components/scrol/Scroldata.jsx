@@ -5,7 +5,7 @@ import img2 from "../../assets/vel.jpg";
 import img3 from "../../assets/telvi.jpg";
 import img4 from "../../assets/yog'.jpg";
 import img5 from "../../assets/sumka.jpg";
-// import Chilla from "../chila-bozor/Chilla";
+
 
 const Scroldata = () => {
   const [isLoading, setIsLoading] = useState(true);

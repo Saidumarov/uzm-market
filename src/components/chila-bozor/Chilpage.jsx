@@ -269,8 +269,8 @@ const Chilpage = () => {
                     class="fa-solid fa-heart"
                     onClick={color}
                     style={{ color: buttonColor }}
-                  ></i>{" "}
-                  Istaklarga
+                  ></i>
+               <span>   Istaklarga</span>
                 </p>
               </div>
               <p className="title">{title}</p>
@@ -328,10 +328,12 @@ const Chilpage = () => {
                 <p> muddatli to'lov</p>
                 <i class="fa-solid fa-chevron-right"></i>
               </div>
-              <button className="savatga">Savatga qo'shish</button>
+             <div className="fxs">
+             <button className="savatga">Savatga qo'shish</button>
               <button className="tugmani">
                 Tugmani 1 bosishda xarid qilish
               </button>
+             </div>
               <div className="hafta">
                 <img src={haftaa} alt="" />
                 <p> Bu haftada {hafta}kishi sotib oldi</p>

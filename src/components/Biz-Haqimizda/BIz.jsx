@@ -15,16 +15,14 @@ const BIz = () => {
   const [widtt1, setWidtt1] = useState();
   const [widtt2, setWidtt2] = useState();
 
-
-
   const click = () => {
     if (click) {
       setWidt(`80px`);
       setWidt1(`1px`);
       setWidt2(`1px`);
-      setWidtt(`180deg`)
-      setWidtt1(`0deg`)
-      setWidtt2(`0deg`)
+      setWidtt(`180deg`);
+      setWidtt1(`0deg`);
+      setWidtt2(`0deg`);
     }
   };
   const click1 = () => {
@@ -32,10 +30,9 @@ const BIz = () => {
       setWidt(`1px`);
       setWidt2(`1px`);
       setWidt1(`80px`);
-      setWidtt(`0deg`)
-      setWidtt1(`180deg`)
-      setWidtt2(`0deg`)
-
+      setWidtt(`0deg`);
+      setWidtt1(`180pmdeg`);
+      setWidtt2(`0deg`);
     }
   };
   const click2 = () => {
@@ -43,10 +40,9 @@ const BIz = () => {
       setWidt(`1px`);
       setWidt1(`1px`);
       setWidt2(`80px`);
-      setWidtt(`0deg`)
-      setWidtt1(`0deg`)
-      setWidtt2(`180deg`)
-
+      setWidtt(`0deg`);
+      setWidtt1(`0deg`);
+      setWidtt2(`180deg`);
     }
   };
   return (
@@ -55,7 +51,11 @@ const BIz = () => {
         <div className="b1" style={{ marginLeft: "0px" }}>
           <p>
             <b className="no" onClick={click}>
-              Biz haqimizda <i class="fa-solid fa-angle-down" style={{transform:`rotate(${widtt})`}}></i>
+              Biz haqimizda{" "}
+              <i
+                class="fa-solid fa-angle-down"
+                style={{ transform: `rotate(${widtt})` }}
+              ></i>
             </b>
             <b className="no1">Biz haqimizda</b>
           </p>
@@ -67,7 +67,11 @@ const BIz = () => {
         <div className="b1">
           <p>
             <b className="no" onClick={click1}>
-              Foydalanuvchilarga <i class="fa-solid fa-angle-down"  style={{transform:`rotate(${widtt1})`}}></i>
+              Foydalanuvchilarga{" "}
+              <i
+                class="fa-solid fa-angle-down"
+                style={{ transform: `rotate(${widtt1})` }}
+              ></i>
             </b>
             <b className="no1">Foydalanuvchilarga</b>
           </p>
@@ -81,7 +85,11 @@ const BIz = () => {
           <p>
             <b className="no1">Tadbirkorlarga </b>
             <b className="no" onClick={click2}>
-              Tadbirkorlarga <i class="fa-solid fa-angle-down"  style={{transform:`rotate(${widtt2})`}}></i>
+              Tadbirkorlarga{" "}
+              <i
+                class="fa-solid fa-angle-down"
+                style={{ transform: `rotate(${widtt2})` }}
+              ></i>
             </b>
           </p>
           <div className="vp" style={{ height: widt2 }}>
@@ -121,6 +129,14 @@ const BIz = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="bot"></div>
+      <div className="bot1">
+      <div className="pbb">
+      <p className="bp1">Maxfiylik kelishuvi</p>
+        <p className="bp2">Foydalanuvchi kelishuvi</p>
+      </div>
+        <p className="bp3">«2023© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
       </div>
     </div>
   );
