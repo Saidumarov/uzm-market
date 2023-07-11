@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/nav/Nav";
 import Layout from "./components/nav/Layout";
 import Chilpage from "./components/chila-bozor/Chilpage";
+import Stiky from "./components/Biz-Haqimizda/Stiky";
 
 function App() {
   return (
     <div className="app">
+         <Stiky/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Nav />}>
@@ -15,6 +17,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+   
     </div>
   );
 }

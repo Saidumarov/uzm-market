@@ -132,12 +132,16 @@ const BIz = () => {
       </div>
       <div className="bot"></div>
       <div className="bot1">
-      <div className="pbb">
-      <p className="bp1">Maxfiylik kelishuvi</p>
-        <p className="bp2">Foydalanuvchi kelishuvi</p>
+        <div className="pbb">
+          <p className="bp1">Maxfiylik kelishuvi</p>
+          <p className="bp2">Foydalanuvchi kelishuvi</p>
+        </div>
+        <p className="bp3">
+          «2023© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar
+          himoyalangan»
+        </p>
       </div>
-        <p className="bp3">«2023© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar himoyalangan»</p>
-      </div>
+  
     </div>
   );
 };

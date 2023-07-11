@@ -10,6 +10,31 @@ import fut2 from "../../assets/futbolka/fut3.jpg";
 import lata from "../../assets/unversal/sum.jpg";
 import lata1 from "../../assets/unversal/sum.jpg";
 import lata2 from "../../assets/unversal/sum1.jpg";
+import uram1 from "../../assets/unversal/uram1jp0.jpg";
+import uram from "../../assets/unversal/uram.jpg";
+import uyin from "../../assets/unversal/uyin.jpg";
+import uyin1 from "../../assets/unversal/uyin1.jpg";
+import uyin2 from "../../assets/unversal/uyin2.jpg";
+import soyabon from "../../assets/unversal/soyabon.jpg";
+import soyabon1 from "../../assets/unversal/soyabon1.jpg";
+import soyabon2 from "../../assets/unversal/soyabon2.jpg";
+import tuz from "../../assets/unversal/tuz.jpg";
+import shimgich from "../../assets/avto/shimgich.jpg";
+import shimgich1 from "../../assets/avto/shimgich1.jpg";
+import tel from "../../assets/tel/tel.jpg";
+import tel1 from "../../assets/tel/tel1.jpg";
+import tel2 from "../../assets/tel/tel3.jpg";
+import havo1 from "../../assets/havo/havo1.jpg";
+import havo2 from "../../assets/havo/havo2.jpg";
+import havo3 from "../../assets/havo/havo.jpg";
+
+
+
+
+
+
+
+
 import baho from "../../assets/baho.svg";
 import olovv from "../../assets/olov.svg";
 import haftaa from "../../assets/hafta.png";
@@ -58,94 +83,94 @@ const Chilpage = () => {
     },
     {
       id: 4,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
-      sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      title: `Avtomobil old oynasi uchun quyoshtan himoya`,
+      img: uram1,
+      img1: uram,
+      img2: uram,
+      narx: 30,
+      narxno: 27,
+      sotuvchi: `   avto `,
+      oyiga: `  3 420 `,
+      olov: 12,
+      hafta: 181,
     },
     {
       id: 5,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
-      sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      title: `  Suv sepadigan to'poncha Water Gun H-994A`,
+      img: uyin,
+      img1: uyin1,
+      img2: uyin2,
+      narx: 13,
+      narxno: 28,
+      sotuvchi: `     gamen `,
+      oyiga: `  1   560 `,
+      olov: 212,
+      hafta: 281,
     },
     {
       id: 6,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
-      sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      title: `   Old oynasi uchun barqaror soyabon arzon narxlarda `,
+      img: soyabon,
+      img1: soyabon1,
+      img2: soyabon2,
+      narx: 60,
+      narxno: 147,
+      sotuvchi: `  uzum-uz `,
+      oyiga: `  2 700 `,
+      olov: 52,
+      hafta: 81,
     },
     {
       id: 7,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
+      title: `   Kir yuvish kukuni Зеленый чай Oq atirgul, qo'lda yuvish, 900 g `,
+      img: tuz,
+      img1: tuz,
+      img2: tuz,
+      narx: 15,
+      narxno: 22,
       sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      oyiga: `  1 800 `,
+      olov: 200,
+      hafta: 101,
     },
     {
       id: 8,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
+      title: `Mashina yuvish uchun shimgich Master Comfort "Egida- `,
+      img: shimgich,
+      img1: shimgich1,
+      img2: shimgich,
+      narx: 3,
+      narxno: 5,
       sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      oyiga: `  380 `,
+      olov: 122,
+      hafta: 50,
     },
     {
       id: 9,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
+      title: `O'yin smartfon TECNO Pova Neo 2, 6/128 GB, NFC 2SIM `,
+      img: tel,
+      img1: tel1,
+      img2: tel2,
+      narx: 1.999,
+      narxno: 2.3,
       sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      oyiga: `  239 000 `,
+      olov: 102,
+      hafta: 81,
     },
     {
       id: 10,
-      title: `Avtomobillar uchun mikrofiber latta `,
-      img: lata1,
-      img1: lata2,
-      img2: lata,
-      narx: 20,
-      narxno: 45,
+      title: `   Havo namlagich akkumulyatorli, rangli yoritgichli va metall korpusi `,
+      img: havo1,
+      img1: havo2,
+      img2: havo3,
+      narx: 150,
+      narxno: 220,
       sotuvchi: `      eshop `,
-      oyiga: `  2 400 `,
-      olov: 2,
-      hafta: 481,
+      oyiga: `  18 000 `,
+      olov: 200,
+      hafta: 41,
     },
   ];
 
