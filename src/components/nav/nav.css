@@ -154,6 +154,7 @@ input {
     border-bottom-right-radius: 4px;
     font-size: 17px;
     padding: 2px 0 0 5px;
+    background-color: #F1F1F2;
 
 }
 
@@ -571,6 +572,7 @@ input {
         left: 140px;
         width: auto;
         color: #A6A8AD;
+        background-color: #F1F1F2;
 
 
     }

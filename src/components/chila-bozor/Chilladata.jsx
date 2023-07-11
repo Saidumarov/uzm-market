@@ -40,7 +40,7 @@ const Chilladata = () => {
     },
     {
       id: 3,
-      body: `Avtomobillar uchun mikrofiber latta `,
+      body: `Avtomobillar uchun mikrofiber latta arzon  narxlarda `,
       title: `Chilla Bozor`,
       img: lata,
       narx: 20,
@@ -120,7 +120,7 @@ const Chilladata = () => {
     const timer = setTimeout(() => {
       setDelayedData(childata);
       setIsLoading(false);
-    }, 2000);
+    }, 20);
 
     return () => clearTimeout(timer);
   }, []);
