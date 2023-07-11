@@ -569,7 +569,9 @@ abbr span {
     justify-content: center;
     border-radius: 6px;
 }
-
+.mobilchil{
+    display: none;
+}
 .a {
     text-decoration: none;
 
@@ -789,6 +791,40 @@ abbr span {
         margin-top: 70px;
     }
 
+    .bb{
+        display: none;
+    }
+  
+
+    .mobilchil{
+        display: grid;
+        width: 100%;
+        margin-top: 25px;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin-bottom: -5px;
+        font-family: sans-serif;
+        font-size: 14px;
+        color: #62656A;
+        align-items: center;
+        
+    }
+
+    .scle{
+        width: 185px;
+        height:  3px;
+        background-color: #5d00d6;
+        position: absolute;
+       margin-top: 32px;
+       left: 8%;
+       border-radius: 50px;
+       transition: .3s;
+    }
+
+    .mobc{
+        height: 100%;
+    }
+
 
 }
 
@@ -913,7 +949,12 @@ abbr span {
 
 }
 
+@media screen and (max-width:670px) {
+    .scle{
+        width: 155px;
+    }
 
+}
 
 
 @media screen and (max-width:610px) {
@@ -922,6 +963,10 @@ abbr span {
         width: 100%;
         height: 250px;
 
+    }
+    
+    .scle{
+        width: 135px;
     }
 
 }
@@ -1067,6 +1112,10 @@ abbr span {
     .bp3{
         padding-bottom: 50px;
     }
+    
+    .scle{
+        width: 110px;
+    }
 }
 
 @media screen and (max-width:435px) {
@@ -1158,7 +1207,9 @@ abbr span {
     }
 
 
-
+    .scle{
+        width: 105px;
+    }
 
 }
 

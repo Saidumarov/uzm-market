@@ -4,7 +4,7 @@ import img1 from "../../assets/manzura.jpg";
 import img2 from "../../assets/vel.jpg";
 import img3 from "../../assets/telvi.jpg";
 import img4 from "../../assets/yog'.jpg";
-import img5 from "../../assets/sumka.jpg";
+import img5 from "../../assets/futa1.jpg";
 
 
 const Scroldata = () => {
@@ -29,7 +29,7 @@ const Scroldata = () => {
     const timer = setTimeout(() => {
       setDelayedData(data);
       setIsLoading(false);
-    }, 2000);
+    }, 10);
 
     return () => clearTimeout(timer);
   }, []);

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import uzm1 from "../../assets/uzm1.svg";
 import uzm from "../../assets/uzm.svg";
 import katalog from "../../assets/katalog.jpg";
@@ -18,15 +18,39 @@ const NavItme = () => {
     }
   };
 
+  const [bar, setBar] = useState();
 
   return (
     <div>
       <div className="navitme">
+        <div className="bar" onClick={() => (baraa1 = setBar(`0%`))}>
+          <div className="bar1"></div>
+          <div className="bar1"></div>
+          <div className="bar1"></div>
+        </div>
+
+        <div className="bar-menyu" style={{ left: bar }}>
+         <div className="barlin">
+         <div className="bar-x" onClick={() => (baraa2 = setBar(`-100%`))}>
+            <div className="barx"></div>
+            <div className="barx1"></div>
+            
+          </div>
+          <div className="kirsh1">
+            <p>Kirish</p>/
+            <p>Ro'yxatdan o'tish</p>
+          </div>
+         </div>
+         <div className="katalog1">
+          <img src={katalog} alt="" />
+          <p>Katalog</p>
+         </div>
+        </div>
         <div className="uzm">
-       <Link to='/' >
-        <img src={uzm} alt="" className="uzmm1" />
-      <img src={uzm1} alt=""  className="uzmm"/>
-      </Link>
+          <Link to="/">
+            <img src={uzm} alt="" className="uzmm1" />
+            <img src={uzm1} alt="" className="uzmm" />
+          </Link>
         </div>
         <div className="katalog">
           <img src={katalog} alt="" />

@@ -113,6 +113,7 @@ const Chilladata = () => {
       oyiga: `18 000 `,
     },
 
+    {}
 
   ];
 
@@ -120,7 +121,7 @@ const Chilladata = () => {
     const timer = setTimeout(() => {
       setDelayedData(childata);
       setIsLoading(false);
-    }, 20);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

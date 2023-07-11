@@ -141,7 +141,11 @@ const BIz = () => {
           himoyalangan»
         </p>
       </div>
-  
+      <a href="#">
+        <div className="tepaga">
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </a>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const Scrol = (itme) => {
   useEffect(() => {
     let interval;
     if (!stopa) {
-      interval = setInterval(run ,2000);
+      interval = setInterval( run ,2000);
     }
     return () => {
       clearInterval(interval);
