@@ -246,8 +246,11 @@ const Chilpage = () => {
               </div>
               <div
                 className="imgsledr"
-                style={{ transform: `translateX(${-currentIndex * 400}px)` }}
+                style={{ transform: `translateX(${-currentIndex * 100}%)` }}
               >
+                <img src={yog} alt="" className="ynon" />
+                <img src={yog} alt="" className="ynon" />
+
                 {imageList.map((src, index) => (
                   <img key={index} src={src} alt="" />
                 ))}
@@ -270,7 +273,7 @@ const Chilpage = () => {
                     onClick={color}
                     style={{ color: buttonColor }}
                   ></i>
-               <span>   Istaklarga</span>
+                  <span> Istaklarga</span>
                 </p>
               </div>
               <p className="title">{title}</p>
@@ -306,8 +309,7 @@ const Chilpage = () => {
                     </button>
                   </div>
                   <div className="mimg">
-                    <img src={olovv} alt="" />{" "}
-                    <p>Bor-yo'gi {olov} dona qoldi</p>
+                    <img src={olovv} alt="" /> <p>Sotuvda {olov} dona bor</p>
                   </div>
                 </div>
               </div>
@@ -328,19 +330,34 @@ const Chilpage = () => {
                 <p> muddatli to'lov</p>
                 <i class="fa-solid fa-chevron-right"></i>
               </div>
-             <div className="fxs">
-             <button className="savatga">Savatga qo'shish</button>
-              <button className="tugmani">
-                Tugmani 1 bosishda xarid qilish
-              </button>
-             </div>
+              <div className="fxs">
+                <button className="savatga">Savatga qo'shish</button>
+                <button className="tugmani">
+                  Tugmani 1 bosishda xarid qilish
+                </button>
+              </div>
               <div className="hafta">
                 <img src={haftaa} alt="" />
                 <p> Bu haftada {hafta}kishi sotib oldi</p>
               </div>
             </div>
+            <div className="narx111">
+            <div className="narx-itme11">
+              <p
+                className="narx12"
+                style={{ fontSize: "10px", textAlign: "center" }}
+              >
+                Narx umumiy
+              </p>
+              <h3 style={{ color: "black", fontSize: "18px" }}>
+                {count * narx} 000 so'm
+              </h3>
+            </div>
+            <div className="sav">Savatga</div>
+          </div>
           </div>
           <hr className="hh" />
+       
         </div>
       ) : (
         ""
