@@ -29,7 +29,7 @@ const Scroldata = () => {
     const timer = setTimeout(() => {
       setDelayedData(data);
       setIsLoading(false);
-    }, 10);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

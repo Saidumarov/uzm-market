@@ -113,8 +113,7 @@ const Chilladata = () => {
       oyiga: `18 000 `,
     },
 
-    {}
-
+  
   ];
 
   useEffect(() => {

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import "./nav.css";
-import img from "../../assets/la.png";
-import uz from "../../assets/uz.png";
+import img from "../../assets/savg/joy.svg";
+import uz from "../../assets/savg/uz.svg";
 import NavItme from "./Nav-itme";
 import Navmenyu from "./Nav-menyu";
 import BIz from "../Biz-Haqimizda/BIz";

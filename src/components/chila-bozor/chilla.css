@@ -968,6 +968,9 @@ abbr span {
     .scle{
         width: 135px;
     }
+    .data1{
+        margin-bottom: -100px;
+    }
 
 }
 
@@ -1115,6 +1118,9 @@ abbr span {
     
     .scle{
         width: 110px;
+    }
+    .data1{
+        margin-bottom: -140px;
     }
 }
 

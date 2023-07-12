@@ -82,7 +82,7 @@
 }
 
 .uz img {
-    width: 30px;
+    width: 20px;
 }
 
 /* nav-itme */
@@ -184,8 +184,6 @@ input {
 }
 
 .kirsh img {
-    width: 20px;
-    height: 20px;
     margin: 0 8px 0 0px;
 }
 
@@ -204,8 +202,7 @@ input {
 }
 
 .savat img {
-    width: 21px;
-    height: 21px;
+
     margin: 0 8px 0 0px;
 
 }
@@ -225,8 +222,7 @@ input {
 }
 
 .sara img {
-    width: 22px;
-    height: 20.7px;
+
     margin: 0 8px 0 0px;
 
 }
@@ -284,6 +280,10 @@ input {
 
 }
 
+.bar img {
+    width: 90%;
+    display: none;
+}
 .efkt1 {
     width: 0px;
     height: 1.6px;
@@ -313,6 +313,9 @@ input {
     width: 40px;
     transition: .4s;
 
+}
+.bar-menyu{
+    display: none;
 }
 
 
@@ -519,6 +522,14 @@ input {
     .nav p {
         display: none;
     }
+    .bar img {
+        width: 30px;
+        display: block;
+    }
+
+    .bar-x img{
+        width: 30px;
+    }
 
     .bar {
         width: 30px;
@@ -546,6 +557,7 @@ input {
         left: -100%;
         top: 0;
         transition: .4s;
+        display: block;
         
     }
 
@@ -562,7 +574,23 @@ input {
         background-color: white;
         height: 55px;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 8px;
+     
+    }
+
+    .katim{
+        margin-left: 25px;
+    }
+
+    .katim1{
+        position: absolute;
+        right: 25px;
+     
+    }
+    .katalog1 p{
+        font-size: 14px;
+        padding-left: 8px;
+        color: #3333CC;
     }
     .bar-x {
         width: 50px;
@@ -570,6 +598,7 @@ input {
         display: flex;
         justify-content: center;
         position: relative;
+        margin-left: 15px;
 
     }
 
@@ -634,6 +663,36 @@ input {
 
     .katalog {
         display: none;
+    }
+
+    .bar-man{
+        width: 100%;
+        /* height: 100px; */
+        background-color: white;
+        margin-top: 8px;
+    }
+
+    .biz ,  .hamkor , .ilova , .email , .savol1 , .xarit , .joyla , .sar , .buy , .til{
+        display: flex;
+        padding-top: 12px;
+        font-size: 13.5px;
+        padding-left: 25px;
+        font-family: sans-serif;
+        align-items: center;
+    }
+
+    .hamkor{
+        padding-bottom: 20px;
+    }
+
+    .bar-p{
+        padding-left: 11px;
+        color: #141415;
+    }
+
+    .ilova img{
+        width: 25px;
+        margin-right: 10px;
     }
 }
 
@@ -707,11 +766,16 @@ input {
 
     .bar {
         width: 30px;
-        margin-top: 5px;
+        margin-top: 6px;
         margin-left: 30px;
         margin-right: 10px;
 
     }
+    
+.bar img {
+    width: 90%;
+    display: block;
+}
 }
 
 @media screen and (max-width:700px) {
@@ -803,7 +867,12 @@ input {
 
     .bar {
         margin-top: 7px;
+        margin-right: 0px;
 
+    }
+
+    .bar img {
+        width: 90%;
     }
 }
 

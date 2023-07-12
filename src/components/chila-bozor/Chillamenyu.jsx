@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./chilla.css";
 import baho from "../../assets/baho.svg";
-import savat from "../../assets/savatcha.png";
+import savat from "../../assets/savg/savat+.svg";
 
 
 const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga ,}) => {

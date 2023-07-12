@@ -2,10 +2,17 @@ import React, { useState } from "react";
 import "./biz.css";
 import aple from "../../assets/apple.svg";
 import gog from "../../assets/gog.svg";
-import ins from "../../assets/insta.jpg";
-import tel from "../../assets/tel.jpg";
-import yout from "../../assets/yutub.jpg";
-import fas from "../../assets/fas.jpg";
+import ins from "../../assets/savg/ins.svg";
+import tel from "../../assets/savg/tel.svg";
+import yout from "../../assets/savg/yo.svg";
+import fas from "../../assets/savg/fas.svg";
+import tepa from "../../assets/savg/tepa.svg";
+import mac from "../../assets/savg/mac.svg";
+import go from "../../assets/savg/go.svg";
+import pas from "../../assets/savg/pas.svg";
+
+
+
 
 const BIz = () => {
   const [widt, setWidt] = useState();
@@ -31,7 +38,7 @@ const BIz = () => {
       setWidt2(`1px`);
       setWidt1(`80px`);
       setWidtt(`0deg`);
-      setWidtt1(`180pmdeg`);
+      setWidtt1(`180deg`);
       setWidtt2(`0deg`);
     }
   };
@@ -52,10 +59,7 @@ const BIz = () => {
           <p>
             <b className="no" onClick={click}>
               Biz haqimizda{" "}
-              <i
-                class="fa-solid fa-angle-down"
-                style={{ transform: `rotate(${widtt})` }}
-              ></i>
+              <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt})` }}/>
             </b>
             <b className="no1">Biz haqimizda</b>
           </p>
@@ -68,10 +72,7 @@ const BIz = () => {
           <p>
             <b className="no" onClick={click1}>
               Foydalanuvchilarga{" "}
-              <i
-                class="fa-solid fa-angle-down"
-                style={{ transform: `rotate(${widtt1})` }}
-              ></i>
+            <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt1})` }}/>
             </b>
             <b className="no1">Foydalanuvchilarga</b>
           </p>
@@ -85,11 +86,8 @@ const BIz = () => {
           <p>
             <b className="no1">Tadbirkorlarga </b>
             <b className="no" onClick={click2}>
-              Tadbirkorlarga{" "}
-              <i
-                class="fa-solid fa-angle-down"
-                style={{ transform: `rotate(${widtt2})` }}
-              ></i>
+              Tadbirkorlarga
+              <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt2})` }}/>
             </b>
           </p>
           <div className="vp" style={{ height: widt2 }}>
@@ -103,17 +101,23 @@ const BIz = () => {
           </p>
           <div className="p">
             <a href="https://apps.apple.com/ru/app/uzum-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD/id1640483056">
-              {" "}
+            
               <div className="ap">
                 <img src={aple} alt="" /> <p className="a"> AppStore </p>
               </div>
+              <div className="ap1">
+                <img src={mac} alt="" />
+              </div>
             </a>
             <a href="https://play.google.com/store/apps/details?id=uz.uzum.app">
-              {" "}
+          
               <div className="go">
-                {" "}
+               
                 <img src={gog} alt="" style={{ marginLeft: "20px" }} />
                 <p>Google Play</p>
+              </div>
+              <div className="go1">
+                <img src={go} alt="" />
               </div>
             </a>
           </div>
@@ -143,7 +147,7 @@ const BIz = () => {
       </div>
       <a href="#">
         <div className="tepaga">
-          <i class="fa-solid fa-angle-up"></i>
+        <img src={tepa} alt="" />
         </div>
       </a>
     </div>
