@@ -6,9 +6,11 @@ import uz from "../../assets/savg/uz.svg";
 import NavItme from "./Nav-itme";
 import Navmenyu from "./Nav-menyu";
 import BIz from "../Biz-Haqimizda/BIz";
+import Reklama from "../reklama/Reklama";
 const Nav = () => {
   return (
     <div className="wrapper">
+      <Reklama/>
       <div className="nav">
       <div className="kun1">
             Buyurtmangizni 1 kunda bepul yetkazib beramiz!
@@ -35,7 +37,7 @@ const Nav = () => {
           </div>
           <div className="uz">
             <img src={uz} alt="" />
-            O'zbekcha
+          <p>  O'zbekcha</p>
           </div>
         </div>
       </div>

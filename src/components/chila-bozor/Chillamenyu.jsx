@@ -1,14 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./chilla.css";
 import baho from "../../assets/baho.svg";
 import savat from "../../assets/savg/savat+.svg";
+import like from "../../assets/savg/lik.svg";
+import liki from "../../assets/savg/lik.png";
 
+const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
+  const [styl, setStyl] = useState(localStorage.getItem("styl") || "scale(1)");
+  const [bloc, setBloc] = useState(localStorage.getItem("bloc") || "");
 
-const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga ,}) => {
+  const lik = () => {
+    setBloc("none");
+    localStorage.setItem("bloc", "none");
+  };
+
+  const lik1 = () => {
+    setStyl("scale(1.1)");
+    setBloc("block");
+    localStorage.setItem("styl", "scale(1.1)");
+    localStorage.setItem("bloc", "block");
+  };
+
+  useEffect(() => {
+    localStorage.setItem("styl", styl);
+    localStorage.setItem("bloc", bloc);
+  }, [styl, bloc]);
+
   return (
-    <div>
+    <div className="wrr">
+      <img src={like} alt="" className="lik" onClick={lik1} />
+      <img
+        src={liki}
+        alt=""
+        className="liki"
+        onClick={lik}
+        style={{ transform: styl, display: bloc }}
+      />
+
       <Link to={`/post/roduct/single/${id}`} className="a">
+        <div className="clas">
         <div className="content">
           <div className="conimg">
             <img src={img} alt="" />
@@ -29,21 +60,22 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga ,}) => {
             <div className="oyiga1">
               <p>{oyiga}so'm/oyiga</p>
             </div>
-            <div className="xisobot">
-          <div className="nar">
-          <p className="narx11"><s>{narxno} 000 so'm</s></p>
-              <p className="narx12">{narx} 000 so'm</p>
-          </div>
-             <div className="sev">
-             <img src={savat} alt="" />
-              <span className="plus">
-                +
-              </span>
-             </div>
-            </div>
           </div>
         </div>
+        <div className="xisobot">
+          <div className="nar">
+            <p className="narx11">
+              <s>{narxno} 000 so'm</s>
+            </p>
+            <p className="narx12">{narx} 000 so'm</p>
+          </div>
+         
+        </div>
+        </div>
       </Link>
+      <div className="sev">
+            <img src={savat} alt="" />
+          </div>
     </div>
   );
 };

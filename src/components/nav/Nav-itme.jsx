@@ -74,10 +74,12 @@ const NavItme = () => {
               <img src={savol} alt="" />
               <p className="bar-p">Savol-javoblar</p>
             </div>
-            <div className="email">
+         <a href="https://t.me/saidumarov_006">
+         <div className="email">
               <img src={email} alt="" />
               <p className="bar-p">Biz bilan bog'lanish</p>
             </div>
+         </a>
             <div className="ilova">
               <img src={ilova} alt="" />
               Uzum ilovasi</div>

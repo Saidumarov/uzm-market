@@ -22,7 +22,7 @@ const Chilladata = () => {
   const childata = [
     {
       id: 1,
-      body: `Kungaboqar yog'i Sofia, tozalangan va deodorizatsiyalangan, 1 litr`,
+      body: `Kungaboqar yog'i Sofia, tozalangan va deodorizatsiyalangan, 1l`,
       title: `Chilla Bozor `,
       img: yog,
       narx: 14,
@@ -31,7 +31,7 @@ const Chilladata = () => {
     },
     {
       id: 2,
-      body: `Asosiy futbolka Samo, bir rangli, uniseks`,
+      body: `Asosiy futbolka Samo, bir rangli, uniseks arzon`,
       title: `Chilla Bozor `,
       img: fut,
       narx: 21,
@@ -67,7 +67,7 @@ const Chilladata = () => {
     },
     {
       id: 6,
-      body: `   Old oynasi uchun barqaror soyabon`,
+      body: `   Old oynasi uchun barqaror soyabon bu`,
       title: `Chilla Bozor`,
       img: soya,
       narx: 65,

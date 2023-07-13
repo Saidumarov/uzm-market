@@ -26,7 +26,7 @@ const Scroldataa = () => {
     const timer = setTimeout(() => {
       setDelayedData(data);
       setIsLoading(false);
-    }, 20);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

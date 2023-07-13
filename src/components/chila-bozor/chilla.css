@@ -282,6 +282,10 @@ abbr span {
 
 }
 
+.loo1, .loo2 ,.loo3{
+    display: none;
+}
+
 .oyiga p {
     padding-left: 10px;
     font-family: sans-serif;
@@ -390,6 +394,7 @@ abbr span {
 
 }
 
+
 .conimg {
     width: 100%;
     height: 300px;
@@ -465,7 +470,7 @@ abbr span {
 .lo3,
 .lo4,
 .lo5,
-.lo6 {
+.lo6 ,.lo7 , .lo8 , .lo9 {
     width: 50px;
     height: 100%;
     background-color: #d7d3d3;
@@ -484,8 +489,45 @@ abbr span {
     position: relative;
     background-color: #F4F4F4;
     overflow: hidden;
-    margin-top: 55px;
+    margin-top: 50px;
     border-radius: 8px;
+    margin-bottom: -20px;
+}
+
+.cload1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+
+}
+
+.loo1 {
+    width: 20%;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    overflow: hidden;
+    position: relative;
+}
+
+.loo2 {
+    width: 20%;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    overflow: hidden;
+    position: relative;
+}
+
+.loo3 {
+    width: 20%;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    overflow: hidden;
+    position: relative;
 }
 
 @keyframes loading {
@@ -512,12 +554,20 @@ abbr span {
 
 }
 
-.content:hover .conimg img {
+.wrr:hover .conimg img {
     transform: scale(1.1);
 
 }
 
-.content:hover {
+
+
+
+
+.clas{
+    transition: .5s;
+
+}
+.wrr:hover .clas {
     box-shadow: 0px 10px 10px 0px rgb(0, 0, 0, 0.15);
 
 }
@@ -528,6 +578,43 @@ abbr span {
 
 
 }
+
+.istak img {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -1.5px;
+    cursor: pointer;
+
+}
+
+.lik {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 200px;
+    opacity: .5;
+transition: .3s;
+
+}
+
+.lik:hover{
+    opacity: 1;
+}
+.liki {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 50px;
+    z-index: 1;
+    margin-left: 200px;
+    width: 20px;
+    height: 20px;
+    transition: .1s;
+    display: none;
+}
+
+
+
 
 .scrrol1 {
     display: none;
@@ -554,9 +641,10 @@ abbr span {
     color: white;
 }
 
-.ynon{
+.ynon {
     display: none;
 }
+
 .oyiga1 {
     width: 110px;
     height: 18px;
@@ -569,15 +657,17 @@ abbr span {
     justify-content: center;
     border-radius: 6px;
 }
-.mobilchil{
+
+.mobilchil {
     display: none;
 }
+
 .a {
     text-decoration: none;
 
 }
 
-.narx111{
+.narx111 {
     display: none;
 }
 
@@ -597,6 +687,10 @@ abbr span {
 
 .xisobot {
     display: flex;
+  position: absolute;
+
+    
+  
 }
 
 .sev {
@@ -607,14 +701,23 @@ abbr span {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 185px;
+    margin-left: 190px;
     position: absolute;
     transition: .2s;
-}
+   margin-top: -40px;
+   cursor: pointer;
 
+    
+}
+.sev:hover .content{
+    box-shadow: 0px 10px 10px 0px rgb(0, 0, 0, 0.15);
+   
+}
 .sev:hover {
     background-color: #EFEFEF;
 }
+
+
 
 .sev img {
     width: 65%;
@@ -659,7 +762,7 @@ abbr span {
 }
 
 .xisobot {
-    margin-top: 15px;
+    margin-top: -40px;
 }
 
 .istak1 {
@@ -710,6 +813,7 @@ abbr span {
     .istak {
         display: flex;
         /* padding: 10%; */
+        align-items: center;
     }
 
     .baho {
@@ -786,17 +890,23 @@ abbr span {
         justify-content: space-evenly;
         grid-template-columns: auto auto;
     }
-
+    .loo1, .loo2 ,.loo3{
+        display: block;
+    }
+    
     .tavar {
         margin-top: 70px;
     }
 
-    .bb{
+    .bb {
         display: none;
     }
-  
 
-    .mobilchil{
+    .cload {
+        display: none;
+    }
+
+    .mobilchil {
         display: grid;
         width: 100%;
         margin-top: 25px;
@@ -807,21 +917,21 @@ abbr span {
         font-size: 14px;
         color: #62656A;
         align-items: center;
-        
+
     }
 
-    .scle{
+    .scle {
         width: 185px;
-        height:  3px;
+        height: 3px;
         background-color: #5d00d6;
         position: absolute;
-       margin-top: 32px;
-       left: 8%;
-       border-radius: 50px;
-       transition: .3s;
+        margin-top: 32px;
+        left: 8%;
+        border-radius: 50px;
+        transition: .3s;
     }
 
-    .mobc{
+    .mobc {
         height: 100%;
     }
 
@@ -851,50 +961,50 @@ abbr span {
     }
 
 
-    
-.narx111{
-    display: flex;
-    position: fixed;
-    z-index: 2;
-    bottom:  0px;
-    width: 100%;
-    background-color: white;
-    border-top: 1px solid rgba(0, 0, 0, 0.596);
-    height: 65px;
-    align-items: center;
-    justify-content: space-around;
-   
-}
 
-.narx-itme11{
-    /* display: flex; */
-    align-items: center;
-    justify-content: space-between;  
-}
+    .narx111 {
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        bottom: 0px;
+        width: 100%;
+        background-color: white;
+        border-top: 1px solid rgba(0, 0, 0, 0.596);
+        height: 65px;
+        align-items: center;
+        justify-content: space-around;
 
-.bp3{
-    padding-bottom: 20px;
-}
+    }
 
-.sav{
-    width: 45%;
-    background-color:#7000FF;
-    border-radius: 8px;
-    text-align: center;
-    height: 40px;
-    display: flex;
-    align-items: center;
-   justify-content: center;
-   font-family: sans-serif;
-   font-size: 16px;
-   color: white;  
-}
+    .narx-itme11 {
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.narx{
-    display: none;
-}
+    .bp3 {
+        padding-bottom: 20px;
+    }
 
-    .ynon{
+    .sav {
+        width: 45%;
+        background-color: #7000FF;
+        border-radius: 8px;
+        text-align: center;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 16px;
+        color: white;
+    }
+
+    .narx {
+        display: none;
+    }
+
+    .ynon {
         display: block;
     }
 
@@ -950,7 +1060,7 @@ abbr span {
 }
 
 @media screen and (max-width:670px) {
-    .scle{
+    .scle {
         width: 155px;
     }
 
@@ -961,15 +1071,16 @@ abbr span {
 
     .conimg {
         width: 100%;
-        height: 250px;
+        height: 280px;
 
     }
-    
-    .scle{
+
+    .scle {
         width: 135px;
     }
-    .data1{
-        margin-bottom: -100px;
+
+    .data1 {
+        margin-bottom: -70px;
     }
 
 }
@@ -977,7 +1088,7 @@ abbr span {
 @media screen and (max-width:550px) {
     .content {
         width: 230px;
-        height: 420px;
+        height: 440px;
     }
 
     .content1 {
@@ -1004,12 +1115,26 @@ abbr span {
 
     }
 
+    .lik {
+        position: absolute;
+        cursor: pointer;
+        margin-top: 50px;
+        z-index: 1;
+        margin-left: 30%;
+
+    }
+    .liki {
+   
+        margin-left: 30%;
+      
+    }
 
 
 
     .tavar2 {
         margin-top: 470px;
     }
+
     .hh {
         position: relative;
         margin-top: -100px;
@@ -1021,7 +1146,7 @@ abbr span {
 @media screen and (max-width:500px) {
     .content {
         width: 220px;
-        height: 420px;
+        height: 450px;
     }
 
     .content1 {
@@ -1036,14 +1161,12 @@ abbr span {
 
     }
 
-  
-
     .img-Itme img {
         width: 115px;
         height: 120px;
 
     }
-    
+
 
     .tavar2 {
         margin-top: 390px;
@@ -1052,9 +1175,25 @@ abbr span {
     .hh {
         position: relative;
         margin-top: -150px;
-     
+
 
     }
+
+    .lik {
+        position: absolute;
+        cursor: pointer;
+        margin-top: 50px;
+        z-index: 1;
+        margin-left: 35%;
+
+    }
+
+    .liki {
+   
+        margin-left: 35%;
+      
+    }
+
 
 }
 
@@ -1063,7 +1202,7 @@ abbr span {
 
     .content {
         width: 210px;
-        height: 430px;
+        height: 450px;
     }
 
     .content1 {
@@ -1071,9 +1210,6 @@ abbr span {
         height: 430px;
     }
 
-    .sev {
-        display: none;
-    }
 }
 
 @media screen and (max-width:450px) {
@@ -1083,7 +1219,7 @@ abbr span {
 
     .content {
         width: 200px;
-        height: 430px;
+        height: 410px;
     }
 
     .content1 {
@@ -1107,20 +1243,28 @@ abbr span {
     }
 
 
-    .pbb{
+    .pbb {
         padding-top: 60px;
-     
+
     }
 
-    .bp3{
+    .bp3 {
         padding-bottom: 50px;
     }
-    
-    .scle{
+
+    .scle {
         width: 110px;
     }
-    .data1{
-        margin-bottom: -140px;
+
+    .data1 {
+        margin-bottom: -90px;
+    }
+
+    .narx11{
+        font-size: 11px;
+    }
+    .narx12{
+        font-size: 14px;
     }
 }
 
@@ -1128,7 +1272,7 @@ abbr span {
 
     .content {
         width: 190px;
-        height: 430px;
+        height: 410px;
     }
 
     .content1 {
@@ -1161,7 +1305,7 @@ abbr span {
 
     .content {
         width: 180px;
-        height: 430px;
+        height: 410px;
     }
 
     .content1 {
@@ -1174,7 +1318,7 @@ abbr span {
 @media screen and (max-width:405px) {
     .content {
         width: 170px;
-        height: 435px;
+        height: 420px;
     }
 
     .content1 {
@@ -1191,6 +1335,7 @@ abbr span {
         position: absolute;
         right: 0;
     }
+
 
 
     .imgscrool {
@@ -1213,7 +1358,7 @@ abbr span {
     }
 
 
-    .scle{
+    .scle {
         width: 105px;
     }
 
@@ -1223,12 +1368,13 @@ abbr span {
 @media screen and (max-width:385px) {
     .sev {
         margin-left: 110px;
+       
 
     }
 
     .content {
         width: 170px;
-        height: 435px;
+        height: 420px;
     }
 }
 
@@ -1240,6 +1386,6 @@ abbr span {
 
     .content {
         width: 160px;
-        height: 435px;
+       
     }
 }

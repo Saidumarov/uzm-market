@@ -27,13 +27,7 @@ import tel2 from "../../assets/tel/tel3.jpg";
 import havo1 from "../../assets/havo/havo1.jpg";
 import havo2 from "../../assets/havo/havo2.jpg";
 import havo3 from "../../assets/havo/havo.jpg";
-
-
-
-
-
-
-
+import like from "../../assets/savg/lik.svg";
 
 import baho from "../../assets/baho.svg";
 import olovv from "../../assets/olov.svg";
@@ -293,11 +287,12 @@ const Chilpage = () => {
                   )<span className="sapan">21000 ta buyurtma</span>
                 </p>
                 <p className="istak">
-                  <i
-                    class="fa-solid fa-heart"
+                  <img
+                    src={like}
+                    alt=""
                     onClick={color}
                     style={{ color: buttonColor }}
-                  ></i>
+                  />
                   <span> Istaklarga</span>
                 </p>
               </div>
@@ -367,22 +362,21 @@ const Chilpage = () => {
               </div>
             </div>
             <div className="narx111">
-            <div className="narx-itme11">
-              <p
-                className="narx12"
-                style={{ fontSize: "10px", textAlign: "center" }}
-              >
-                Narx umumiy
-              </p>
-              <h3 style={{ color: "black", fontSize: "18px" }}>
-                {count * narx} 000 so'm
-              </h3>
+              <div className="narx-itme11">
+                <p
+                  className="narx12"
+                  style={{ fontSize: "10px", textAlign: "center" }}
+                >
+                  Narx umumiy
+                </p>
+                <h3 style={{ color: "black", fontSize: "18px" }}>
+                  {count * narx} 000 so'm
+                </h3>
+              </div>
+              <div className="sav">Savatga</div>
             </div>
-            <div className="sav">Savatga</div>
-          </div>
           </div>
           <hr className="hh" />
-       
         </div>
       ) : (
         ""
