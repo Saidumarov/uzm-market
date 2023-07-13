@@ -28,10 +28,28 @@ import havo1 from "../../assets/havo/havo1.jpg";
 import havo2 from "../../assets/havo/havo2.jpg";
 import havo3 from "../../assets/havo/havo.jpg";
 import like from "../../assets/savg/lik.svg";
-
 import baho from "../../assets/baho.svg";
 import olovv from "../../assets/olov.svg";
 import haftaa from "../../assets/hafta.png";
+import kros from "../../assets/lampa/kros.jpg"
+import kros1 from "../../assets/lampa/kros1.jpg"
+import kros2 from "../../assets/lampa/koros2.jpg"
+import watch from "../../assets/lampa/watch.jpg"
+import watch1 from "../../assets/lampa/watch.1.jpg"
+import watch2 from "../../assets/lampa/watch.2.jpg"
+import nout from "../../assets/lampa/nout.jpg"
+import nout1 from "../../assets/lampa/nout1.jpg"
+import sam from "../../assets/lampa/sam.jpg"
+import sam1 from "../../assets/lampa/sam1.jpg"
+import lampa from "../../assets/lampa/lampa.jpg"
+import lampa1 from "../../assets/lampa/lampa1.jpg"
+import lampa2 from "../../assets/lampa/lampa2.jpg"
+
+
+
+
+
+
 
 const Chilpage = () => {
   const { id } = useParams();
@@ -165,6 +183,71 @@ const Chilpage = () => {
       oyiga: `  18 000 `,
       olov: 200,
       hafta: 41,
+    },
+    {
+      id: 11,
+      title: `Krossovkalar erkaklar uchun, nafas oladigan to'rlik, sport uchun mos`,
+      img: kros,
+      img1: kros1,
+      img2: kros2,
+      narx: 109,
+      narxno: 399,
+      oyiga: `13 080 `,
+      sotuvchi: `      eshop `,
+      olov: 250,
+      hafta: 141,
+    },
+    {
+      id: 12,
+      title:  `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
+      img: watch,
+      img1: watch1,
+      img2: watch2,
+      narx: 499,
+      narxno: 729,
+      oyiga: `59 880 `,
+      sotuvchi: `      eshop `,
+      olov: 20,
+      hafta: 41,
+    },
+    {
+      id: 13,
+      title: ` Noutbuk uchun ryukzak va hujjatlar uchun 15.6 va 17.3 USB bilan`,
+      img: nout,
+      img1: nout1,
+      img2: nout1,
+      narx: 152,
+      narxno: 300,
+      sotuvchi: `      eshop `,
+      oyiga: `23 400 `,
+      olov: 240,
+      hafta: 51,
+    },
+    {
+      id: 14,
+      title: `  Освежитель для авто - вертолет`,
+      img: sam,
+      img1: sam1,
+      img2: sam1,
+      narx: 67,
+      narxno: 80,
+      oyiga: `8 040 `,
+      sotuvchi: `      eshop `,
+      olov: 120,
+      hafta: 91,
+    },
+    {
+      id: 15,
+      title: ` LED lampalar H4 linzali A7 LED, 6000K 2 dona, old oyna himoyachilari kiritilgan`,
+      img: lampa,
+      img1: lampa1,
+      img2: lampa2,
+      narx: 285,
+      narxno: 325,
+      oyiga: `34 200`,
+      sotuvchi: `      eshop `,
+      olov: 120,
+      hafta: 49,
     },
   ];
 

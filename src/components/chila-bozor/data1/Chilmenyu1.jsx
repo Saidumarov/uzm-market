@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./chilla.css";
-import baho from "../../assets/baho.svg";
-import savat from "../../assets/savg/savat+.svg";
-import like from "../../assets/savg/lik.svg";
-import liki from "../../assets/savg/lik.png";
+import "../chilla.css";
+import baho from "../../../assets/baho.svg";
+import savat from "../../../assets/savg/savat+.svg";
+import like from "../../../assets/savg/lik.svg";
+import liki from "../../../assets/savg/lik.png";
 
 
-const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga  }) => {
+const Chilmenyu1 = ({ id, body, title, img, narx, narxno, oyiga   }) => {
   const [styl, setStyl] = useState(localStorage.getItem("styl") || "scale(1)");
   const [bloc, setBloc] = useState(localStorage.getItem("bloc") || "");
 
@@ -28,8 +28,21 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga  }) => {
     localStorage.setItem("bloc", bloc);
   }, [styl, bloc]);
 
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setScreenWidth(window.innerWidth || document.documentElement.clientWidth)};
 
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
+  // if (screenWidth < 1290) {
+  // if (id === 15) {
+  //   return
+  // }
+  // }
 
   return (
     <div className="wrr">
@@ -39,8 +52,7 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga  }) => {
         alt=""
         className="liki"
         onClick={lik}
-        style={{ transform: styl, display: bloc }}
-      />
+        style={{ transform: styl, display: bloc }}/>
 
       <Link to={`/post/roduct/single/${id}`} className="a">
         <div className="clas">
@@ -84,4 +96,4 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga  }) => {
   );
 };
 
-export default Chillamenyu;
+export default Chilmenyu1;

@@ -11,14 +11,12 @@ import shimgich from "../../assets/avto/shimgich.jpg";
 import tel from "../../assets/tel/tel.jpg";
 import havo from "../../assets/havo/havo1.jpg";
 
-
-
-
 import Loadindata from "./Loadindata";
 
 const Chilladata = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [delayedData, setDelayedData] = useState([]);
+
   const childata = [
     {
       id: 1,
@@ -31,7 +29,7 @@ const Chilladata = () => {
     },
     {
       id: 2,
-      body: `Asosiy futbolka Samo, bir rangli, uniseks arzon`,
+      body: `Asosiy futbolka Samo, bir rangli, uniseks arzon narxlarda.`,
       title: `Chilla Bozor `,
       img: fut,
       narx: 21,
@@ -100,7 +98,7 @@ const Chilladata = () => {
       title: `Chilla Bozor`,
       img: tel,
       narx: 1.999,
-      narxno: 2.300,
+      narxno: 2.3,
       oyiga: `239 880 `,
     },
     {
@@ -112,8 +110,8 @@ const Chilladata = () => {
       narxno: 220,
       oyiga: `18 000 `,
     },
-
-  
+   
+   
   ];
 
   useEffect(() => {
@@ -128,9 +126,7 @@ const Chilladata = () => {
     <div className="data">
       <div>
         {isLoading ? (
-      
-            <Loadindata />
-         
+          <Loadindata />
         ) : (
           <div className="data1">
             {delayedData.map((item) => (

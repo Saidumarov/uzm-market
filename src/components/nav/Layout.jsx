@@ -3,6 +3,7 @@ import Scroldata from "../scrol/Scroldata";
 import Chilladata from "../chila-bozor/Chilladata";
 import Scroldataa from "../scrol/Scroldataa";
 import { useEffect } from "react";
+import Childata1 from "../chila-bozor/data1/Childata1";
 
 const Layout = () => {
   const [screenWidth, setScreenWidth] = useState(
@@ -25,18 +26,19 @@ const Layout = () => {
       <div>
         <Scroldataa />
         <Chilladata />
+        <Childata1 />
+
       </div>
     );
-  } else if(screenWidth >= 1160) {
+  } else if (screenWidth >= 1160) {
     return (
       <div>
         <Scroldata />
         <Chilladata />
+        <Childata1 />
       </div>
     );
   }
-
-
 };
 
 export default Layout;

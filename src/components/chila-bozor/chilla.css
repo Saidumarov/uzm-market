@@ -282,7 +282,9 @@ abbr span {
 
 }
 
-.loo1, .loo2 ,.loo3{
+.loo1,
+.loo2,
+.loo3 {
     display: none;
 }
 
@@ -470,7 +472,10 @@ abbr span {
 .lo3,
 .lo4,
 .lo5,
-.lo6 ,.lo7 , .lo8 , .lo9 {
+.lo6,
+.lo7,
+.lo8,
+.lo9 {
     width: 50px;
     height: 100%;
     background-color: #d7d3d3;
@@ -555,7 +560,8 @@ abbr span {
 }
 
 .wrr:hover .conimg img {
-    transform: scale(1.1);
+    transform: scale(1.03);
+
 
 }
 
@@ -563,12 +569,13 @@ abbr span {
 
 
 
-.clas{
+.clas {
     transition: .5s;
 
 }
+
 .wrr:hover .clas {
-    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 0.15);
+    box-shadow: 0px 7px 10px 0px rgb(0, 0, 0, 0.15);
 
 }
 
@@ -578,6 +585,16 @@ abbr span {
 
 
 }
+
+.wrr {
+    border-radius: 8px;
+}
+
+.clas {
+    border-radius: 8px;
+
+}
+
 
 .istak img {
     position: absolute;
@@ -594,13 +611,14 @@ abbr span {
     z-index: 1;
     margin-left: 200px;
     opacity: .5;
-transition: .3s;
+    transition: .3s;
 
 }
 
-.lik:hover{
+.lik:hover {
     opacity: 1;
 }
+
 .liki {
     position: absolute;
     cursor: pointer;
@@ -687,10 +705,10 @@ abbr span {
 
 .xisobot {
     display: flex;
-  position: absolute;
+    position: absolute;
 
-    
-  
+
+
 }
 
 .sev {
@@ -704,15 +722,17 @@ abbr span {
     margin-left: 190px;
     position: absolute;
     transition: .2s;
-   margin-top: -40px;
-   cursor: pointer;
+    margin-top: -40px;
+    cursor: pointer;
 
-    
+
 }
-.sev:hover .content{
+
+.sev:hover .content {
     box-shadow: 0px 10px 10px 0px rgb(0, 0, 0, 0.15);
-   
+
 }
+
 .sev:hover {
     background-color: #EFEFEF;
 }
@@ -786,8 +806,32 @@ abbr span {
     cursor: pointer;
 }
 
+.darhol {
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 420px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+.darhol img{
+    object-fit: cover;
+    width: 100%;
+    transition: .3s;
+    border-radius: 10px;
+
+}
+
+.darhol:hover img{
+    transform: scale(1.02);
+}
+.dar1{
+    display: none;
+}
+
 @media screen and (max-width:1280px) {
-    .data {
+    .data  {
         width: 95%;
     }
 
@@ -804,6 +848,11 @@ abbr span {
 
     }
 
+    .darhol {
+        width: 100%;
+        height: auto;
+   
+    }
     .tavar {
         width: 95%;
 
@@ -852,7 +901,14 @@ abbr span {
         grid-template-columns: auto auto auto;
 
     }
-
+   
+    .dar1{
+        display: block;
+        height: 450px;
+    }
+    .dar{
+        display: none;
+    }
 
     .imgscrool img {
         width: 100%;
@@ -890,10 +946,13 @@ abbr span {
         justify-content: space-evenly;
         grid-template-columns: auto auto;
     }
-    .loo1, .loo2 ,.loo3{
+
+    .loo1,
+    .loo2,
+    .loo3 {
         display: block;
     }
-    
+
     .tavar {
         margin-top: 70px;
     }
@@ -1056,7 +1115,10 @@ abbr span {
         right: 75px;
     }
 
-
+    .dar1{
+        display: block;
+        height: 420px;
+    }
 }
 
 @media screen and (max-width:670px) {
@@ -1064,6 +1126,10 @@ abbr span {
         width: 155px;
     }
 
+    .dar1{
+        display: block;
+        height: 390px;
+    }
 }
 
 
@@ -1074,6 +1140,10 @@ abbr span {
         height: 280px;
 
     }
+    .dar1{
+        display: block;
+        height: 340px;
+    }
 
     .scle {
         width: 135px;
@@ -1083,6 +1153,9 @@ abbr span {
         margin-bottom: -70px;
     }
 
+    .darhol{
+        margin-top: 120px;
+    }
 }
 
 @media screen and (max-width:550px) {
@@ -1095,7 +1168,10 @@ abbr span {
         width: 230px;
         height: 420px;
     }
-
+    .dar1{
+        display: block;
+        height: 310px;
+    }
     .data1 {
         display: grid;
         justify-content: space-between;
@@ -1123,10 +1199,11 @@ abbr span {
         margin-left: 30%;
 
     }
+
     .liki {
-   
+
         margin-left: 30%;
-      
+
     }
 
 
@@ -1143,7 +1220,7 @@ abbr span {
 
     .wrr:hover .clas {
         box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.15);
-    
+
     }
 
 
@@ -1172,7 +1249,10 @@ abbr span {
         height: 120px;
 
     }
-
+    .dar1{
+        display: block;
+        height: 290px;
+    }
 
     .tavar2 {
         margin-top: 390px;
@@ -1195,9 +1275,9 @@ abbr span {
     }
 
     .liki {
-   
+
         margin-left: 35%;
-      
+
     }
 
 
@@ -1266,10 +1346,11 @@ abbr span {
         margin-bottom: -90px;
     }
 
-    .narx11{
+    .narx11 {
         font-size: 11px;
     }
-    .narx12{
+
+    .narx12 {
         font-size: 14px;
     }
 }
@@ -1280,7 +1361,10 @@ abbr span {
         width: 190px;
         height: 410px;
     }
-
+    .dar1{
+        display: block;
+        height: 260px;
+    }
     .content1 {
         width: 190px;
         height: 430px;
@@ -1374,10 +1458,13 @@ abbr span {
 @media screen and (max-width:385px) {
     .sev {
         margin-left: 110px;
-       
+
 
     }
-
+    .dar1{
+        display: block;
+        height: 240px;
+    }
     .content {
         width: 170px;
         height: 420px;
@@ -1392,6 +1479,6 @@ abbr span {
 
     .content {
         width: 160px;
-       
+
     }
 }
