@@ -1,0 +1,105 @@
+.data-itme {
+    width: 1250px;
+    margin: 0 auto;
+
+
+
+}
+
+.data1-itme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.data1-itme1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+
+}
+
+
+.swiper-slide {
+    font-size: 18px;
+    margin-left: 0;
+    width: 9%;
+
+}
+
+
+.mySwiper {
+    cursor: pointer;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.swiper-wrapper {
+    cursor: pointer !important;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: space-between !important;
+    width: 255px !important;
+    display: flex !important;
+    justify-content: space-around !important;
+    cursor: pointer !important;
+}
+
+.yana {
+    width: 700px;
+    height: 50px;
+    font-family: sans-serif;
+    font-size: 17px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 40px;
+    margin-bottom: -20px;
+
+}
+
+@media screen and (max-width:1280px) {
+    .data-itme {
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .data1-itme1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 325px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: space-between !important;
+        width: auto !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        cursor: pointer !important;
+    }
+
+
+}
+
+@media screen and (max-width:900px) {
+    .yana {
+        width: 65%;
+    }
+}
+
+
+@media screen and (max-width:610px) {
+    .yana {
+        width: 65%;
+        margin-top: 110px;
+        margin-bottom: -80px;
+    }
+}

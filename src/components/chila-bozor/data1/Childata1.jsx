@@ -8,12 +8,13 @@ import Chilmenyu1 from "./Chilmenyu1";
 import darhol1 from "../../../assets/darhol1.jpg";
 import darhol from "../../../assets/darhol.jpg";
 
-
-
-
 const Childata1 = () => {
   const [delayedData, setDelayedData] = useState([]);
   const [img, setImg] = useState();
+  const [text, setText] = useState();
+
+
+
   const childata = [
     {
       id: 11,
@@ -66,31 +67,41 @@ const Childata1 = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setDelayedData(childata);
-      setIsLoading(false);
     }, 1000);
     setTimeout(() => {
       setImg(
         <div className="darhol">
-        <img src={darhol} alt="" className="dar" />
-        <img src={darhol1} alt="" className="dar1" />
-
+          <img src={darhol} alt="" className="dar" />
+          <img src={darhol1} alt="" className="dar1" />
         </div>
       );
+
+      setText(
+        <h2 className="bb">
+          <b>Ortiqcha to'lovlarsiz nasiya</b>{" "}
+          <i class="fa-solid fa-chevron-right"></i>
+        </h2>
+      );
+
+     
     }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
-;
   return (
     <div className="data">
       {img}
+      {text}
+    
       <div>
         <div className="data1">
           {delayedData.map((item) => (
             <Chilmenyu1 key={item.id} {...item} />
           ))}
         </div>
+       
       </div>
+   
     </div>
   );
 };

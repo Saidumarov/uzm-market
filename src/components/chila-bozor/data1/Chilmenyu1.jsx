@@ -6,43 +6,50 @@ import savat from "../../../assets/savg/savat+.svg";
 import like from "../../../assets/savg/lik.svg";
 import liki from "../../../assets/savg/lik.png";
 
-
-const Chilmenyu1 = ({ id, body, title, img, narx, narxno, oyiga   }) => {
-  const [styl, setStyl] = useState(localStorage.getItem("styl") || "scale(1)");
-  const [bloc, setBloc] = useState(localStorage.getItem("bloc") || "");
+const Chilmenyu1 = ({ id, body, title, img, narx, narxno, oyiga }) => {
+  const [styl, setStyl] = useState(
+    localStorage.getItem(`styl-${id}`) || "scale(1)"
+  );
+  const [bloc, setBloc] = useState(localStorage.getItem(`bloc-${id}`) || "");
 
   const lik = () => {
     setBloc("none");
-    localStorage.setItem("bloc", "none");
+    localStorage.setItem(`bloc-${id}`, "none");
   };
 
   const lik1 = () => {
     setStyl("scale(1.1)");
     setBloc("block");
-    localStorage.setItem("styl", "scale(1.1)");
-    localStorage.setItem("bloc", "block");
+    localStorage.setItem(`styl-${id}`, "scale(1.1)");
+    localStorage.setItem(`bloc-${id}`, "block");
   };
 
   useEffect(() => {
-    localStorage.setItem("styl", styl);
-    localStorage.setItem("bloc", bloc);
-  }, [styl, bloc]);
+    localStorage.setItem(`styl-${id}`, styl);
+    localStorage.setItem(`bloc-${id}`, bloc);
+  }, [id, styl, bloc]);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setScreenWidth(window.innerWidth || document.documentElement.clientWidth)};
+  const [screenWidth, setScreenWidth] = useState(
+    window.innerWidth || document.documentElement.clientWidth
+  );
 
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth || document.documentElement.clientWidth);
+    };
 
-  // if (screenWidth < 1290) {
-  // if (id === 15) {
-  //   return
-  // }
-  // }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  if (screenWidth < 800 ) {
+    if (id === 15) {
+      return null;
+    }
+  
+  }
 
   return (
     <div className="wrr">
@@ -52,7 +59,8 @@ const Chilmenyu1 = ({ id, body, title, img, narx, narxno, oyiga   }) => {
         alt=""
         className="liki"
         onClick={lik}
-        style={{ transform: styl, display: bloc }}/>
+        style={{ transform: styl, display: bloc }}
+      />
 
       <Link to={`/post/roduct/single/${id}`} className="a">
         <div className="clas">
@@ -91,7 +99,6 @@ const Chilmenyu1 = ({ id, body, title, img, narx, narxno, oyiga   }) => {
       <div className="sev">
         <img src={savat} alt="" />
       </div>
-
     </div>
   );
 };

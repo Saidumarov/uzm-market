@@ -1,12 +1,12 @@
+import  "./scroldat.css"
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./chilla.css";
 import baho from "../../assets/baho.svg";
 import savat from "../../assets/savg/savat+.svg";
 import like from "../../assets/savg/lik.svg";
 import liki from "../../assets/savg/lik.png";
 
-const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
+const Scrolmenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
   const [styl, setStyl] = useState(
     localStorage.getItem(`styl-${id}`) || "scale(1)"
   );
@@ -28,6 +28,7 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
     localStorage.setItem(`styl-${id}`, styl);
     localStorage.setItem(`bloc-${id}`, bloc);
   }, [id, styl, bloc]);
+
 
   return (
     <div className="wrr">
@@ -81,4 +82,4 @@ const Chillamenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
   );
 };
 
-export default Chillamenyu;
+export default Scrolmenyu;
