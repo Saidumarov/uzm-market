@@ -567,11 +567,11 @@ abbr span {
 
 
 
-.yana{
+.yana {
     margin: 0 auto;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .clas {
@@ -820,7 +820,8 @@ abbr span {
     margin-top: 80px;
     cursor: pointer;
 }
-.darhol img{
+
+.darhol img {
     object-fit: cover;
     width: 100%;
     transition: .3s;
@@ -828,15 +829,16 @@ abbr span {
 
 }
 
-.darhol:hover img{
+.darhol:hover img {
     transform: scale(1.02);
 }
-.dar1{
+
+.dar1 {
     display: none;
 }
 
 @media screen and (max-width:1280px) {
-    .data  {
+    .data {
         width: 95%;
     }
 
@@ -856,8 +858,9 @@ abbr span {
     .darhol {
         width: 100%;
         height: auto;
-   
+
     }
+
     .tavar {
         width: 95%;
 
@@ -906,12 +909,13 @@ abbr span {
         grid-template-columns: auto auto auto;
 
     }
-   
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 450px;
     }
-    .dar{
+
+    .dar {
         display: none;
     }
 
@@ -1120,7 +1124,7 @@ abbr span {
         right: 75px;
     }
 
-    .dar1{
+    .dar1 {
         display: block;
         height: 420px;
     }
@@ -1131,7 +1135,7 @@ abbr span {
         width: 155px;
     }
 
-    .dar1{
+    .dar1 {
         display: block;
         height: 390px;
     }
@@ -1145,7 +1149,8 @@ abbr span {
         height: 280px;
 
     }
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 340px;
     }
@@ -1158,7 +1163,7 @@ abbr span {
         margin-bottom: -70px;
     }
 
-    .darhol{
+    .darhol {
         margin-top: 120px;
     }
 }
@@ -1173,10 +1178,12 @@ abbr span {
         width: 230px;
         height: 420px;
     }
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 310px;
     }
+
     .data1 {
         display: grid;
         justify-content: space-between;
@@ -1254,7 +1261,8 @@ abbr span {
         height: 120px;
 
     }
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 290px;
     }
@@ -1366,10 +1374,12 @@ abbr span {
         width: 190px;
         height: 410px;
     }
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 260px;
     }
+
     .content1 {
         width: 190px;
         height: 430px;
@@ -1466,10 +1476,12 @@ abbr span {
 
 
     }
-    .dar1{
+
+    .dar1 {
         display: block;
         height: 240px;
     }
+
     .content {
         width: 170px;
         height: 420px;

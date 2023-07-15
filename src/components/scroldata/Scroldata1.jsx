@@ -4,7 +4,7 @@ import fut from "../../assets/lampa/watch.jpg";
 import lata from "../../assets/lampa/nout.jpg";
 import uram from "../../assets/lampa/sam.jpg";
 import uyin from "../../assets/lampa/lampa.jpg";
-import darhol1 from "../../assets/darhol1.jpg";
+import darhol1 from "../../assets/bas1.jpg";
 import darhol from "../../assets/bas.jpg";
 import Scrolmenyu from "./Scrolmenyu";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,13 +12,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 const Scroldata1 = () => {
-  const [delayedData, setDelayedData] = useState([]);
-  const [delayedData1, setDelayedData1] = useState([]);
-  const [delayedData2, setDelayedData2] = useState([]);
-  const [delayedData3, setDelayedData3] = useState([]);
-  const [delayedData4, setDelayedData4] = useState([]);
-
-  const [img, setImg] = useState();
+  const [img, setImg] = useState(
+    <div className="darhol">
+      <img src={darhol} alt="" className="dar" />
+      <img src={darhol1} alt="" className="dar1" />
+    </div>
+  );
   const childata = [
     {
       id: 16,
@@ -134,144 +133,138 @@ const Scroldata1 = () => {
       oyiga: `34 200`,
     },
   ];
-  const [text, setText] = useState();
+  const [text, setText] = useState(
+    <div>
+      <h2 className="bb">
+        <b>Hovuzlar va aksessuarlar</b>{" "}
+        <i class="fa-solid fa-chevron-right"></i>
+      </h2>
+      <p className="bdb">
+        <b>Hovuzlar va aksessuarlar</b>{" "}
+        <i class="fa-solid fa-chevron-right"></i>
+      </p>
+    </div>
+  );
+  const [text1, setText1] = useState();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setDelayedData(childata);
-      setDelayedData1(childata1);
-      setDelayedData2(childata2);
-      setDelayedData3(childata3);
-      setDelayedData4(childata4);
-    }, 1000);
+    const timer = setTimeout(() => {}, 1000);
     setTimeout(() => {
-      setImg(
-        <div className="darhol">
-          <img src={darhol} alt="" className="dar" />
-          <img src={darhol1} alt="" className="dar1" />
-        </div>
-      );
+      setText1(
+        <div className="data-itme">
+          {img}
+          {text}
+          <div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                "@0.00": {
+                  slidesPerView: 1,
+                  spaceBetween: 10,
+                },
+                "@0.75": {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                "@1.00": {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                "@1.50": {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata1.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata2.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata3.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata4.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
 
-      setText(
-        <h2 className="bb">
-          <b>Hovuzlar va aksessuarlar</b>{" "}
-          <i class="fa-solid fa-chevron-right"></i>
-        </h2>
+              {/* 2 blok */}
+
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata6.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata7.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata8.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata9.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="data1-itme">
+                  {childata10.map((item) => (
+                    <Scrolmenyu key={item.id} {...item} />
+                  ))}
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       );
     }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <div className="data-itme">
-      {img}
-      {text}
-      <div>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          breakpoints={{
-            "@0.00": {
-              slidesPerView: 1,
-              spaceBetween: 10,
-            },
-            "@0.75": {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            "@1.00": {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            "@1.50": {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="data1-itme">
-              {delayedData.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {delayedData1.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {delayedData2.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {delayedData3.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {delayedData4.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-
-          {/* 2 blok */}
-
-          <SwiperSlide>
-            <div className="data1-itme">
-              {childata6.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {childata7.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {childata8.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {childata9.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="data1-itme">
-              {childata10.map((item) => (
-                <Scrolmenyu key={item.id} {...item} />
-              ))}
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </div>
-  );
+  return <div>{text1}</div>;
 };
 
 export default Scroldata1;

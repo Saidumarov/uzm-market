@@ -77,10 +77,16 @@ const Childata1 = () => {
       );
 
       setText(
-        <h2 className="bb">
+   <div>
+         <h2 className="bb">
           <b>Ortiqcha to'lovlarsiz nasiya</b>{" "}
           <i class="fa-solid fa-chevron-right"></i>
         </h2>
+           <p className="bdb1">
+           <b>Ortiqcha to'lovlarsiz nasiya</b>{" "}
+           <i class="fa-solid fa-chevron-right"></i>
+         </p>
+   </div>
       );
 
      

@@ -50,6 +50,7 @@
     cursor: pointer !important;
 }
 
+
 .yana {
     width: 700px;
     height: 50px;
@@ -63,6 +64,16 @@
     margin-bottom: -20px;
 
 }
+
+
+.bdb {
+    display: none;
+}
+
+.bdb1 {
+    display: none;
+}
+
 
 @media screen and (max-width:1280px) {
     .data-itme {
@@ -80,13 +91,20 @@
     .swiper-slide {
         display: flex;
         justify-content: space-between !important;
-        width: auto !important;
         display: flex !important;
+        /* width: 355px !important; */
+
         justify-content: space-around !important;
         cursor: pointer !important;
     }
 
 
+
+    .mySwiper {
+        cursor: pointer;
+        justify-content: space-between;
+        height: 600px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -96,10 +114,125 @@
 }
 
 
+@media screen and (max-width:800px) {
+    .bdb {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 -10px 0;
+        font-family: sans-serif;
+
+    }
+
+    .bdb1 {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 0px 0;
+        font-family: sans-serif;
+
+    }
+
+    .bdb i {
+        right: auto;
+        left: 220px;
+    }
+
+    .bdb1 i {
+        right: auto;
+        left: 250px;
+    }
+}
+
 @media screen and (max-width:610px) {
     .yana {
         width: 65%;
         margin-top: 110px;
         margin-bottom: -80px;
     }
+}
+
+
+@media screen and (max-width:550px) {
+
+    .swiper-slide .data1-itme .wrr .lik,
+    .liki {
+
+
+        margin-left: 35%;
+
+
+    }
+}
+
+@media screen and (max-width:513px) {
+
+    .swiper-slide .data1-itme .wrr .lik,
+    .liki {
+
+
+        margin-left: 35%;
+
+
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: space-between !important;
+        display: flex !important;
+        width: 355px !important;
+
+        justify-content: space-around !important;
+        cursor: pointer !important;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    .swiper-slide .data1-itme .wrr .lik,
+    .liki {
+
+
+        margin-left: 65%;
+
+
+    }
+}
+
+
+
+@media screen and (max-width:450px) {
+
+    .bdb {
+        display: flex;
+        align-items: center;
+        margin: 15px 0 -30px 0;
+        font-family: sans-serif;
+
+    }
+
+    .swiper-slide .data1-itme {
+        width: 80%;
+    }
+
+    .swiper-slide .data1-itme .content {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    .swiper-slide .data1-itme .content .conimg {
+
+        height: 70%;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: space-between !important;
+        width: 255px;
+        display: flex !important;
+        justify-content: space-around !important;
+        cursor: pointer !important;
+    }
+
+
 }
