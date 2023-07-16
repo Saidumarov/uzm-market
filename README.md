@@ -1,1 +1,2 @@
-# uzm-market online do'kon https://uzum-uz.netlify.app/.
+# uzm-market online do'kon https://uzum-uz.netlify.app/..
+
