@@ -31,20 +31,20 @@ import like from "../../assets/savg/lik.svg";
 import baho from "../../assets/baho.svg";
 import olovv from "../../assets/olov.svg";
 import haftaa from "../../assets/hafta.png";
-import kros from "../../assets/lampa/kros.jpg"
-import kros1 from "../../assets/lampa/kros1.jpg"
-import kros2 from "../../assets/lampa/koros2.jpg"
-import watch from "../../assets/lampa/watch.jpg"
-import watch1 from "../../assets/lampa/watch.1.jpg"
-import watch2 from "../../assets/lampa/watch.2.jpg"
-import nout from "../../assets/lampa/nout.jpg"
-import nout1 from "../../assets/lampa/nout1.jpg"
-import sam from "../../assets/lampa/sam.jpg"
-import sam1 from "../../assets/lampa/sam1.jpg"
-import lampa from "../../assets/lampa/lampa.jpg"
-import lampa1 from "../../assets/lampa/lampa1.jpg"
-import lampa2 from "../../assets/lampa/lampa2.jpg"
-
+import kros from "../../assets/lampa/kros.jpg";
+import kros1 from "../../assets/lampa/kros1.jpg";
+import kros2 from "../../assets/lampa/koros2.jpg";
+import watch from "../../assets/lampa/watch.jpg";
+import watch1 from "../../assets/lampa/watch.1.jpg";
+import watch2 from "../../assets/lampa/watch.2.jpg";
+import nout from "../../assets/lampa/nout.jpg";
+import nout1 from "../../assets/lampa/nout1.jpg";
+import sam from "../../assets/lampa/sam.jpg";
+import sam1 from "../../assets/lampa/sam1.jpg";
+import lampa from "../../assets/lampa/lampa.jpg";
+import lampa1 from "../../assets/lampa/lampa1.jpg";
+import lampa2 from "../../assets/lampa/lampa2.jpg";
+import likiia from '../../assets/savg/lik.png'
 
 const Chilpage = () => {
   const { id } = useParams();
@@ -194,7 +194,7 @@ const Chilpage = () => {
     },
     {
       id: 12,
-      title:  `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
+      title: `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
       img: watch,
       img1: watch1,
       img2: watch2,
@@ -259,7 +259,7 @@ const Chilpage = () => {
     },
     {
       id: 17,
-      title:  `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
+      title: `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
       img: watch,
       img1: watch1,
       img2: watch2,
@@ -324,7 +324,7 @@ const Chilpage = () => {
     },
     {
       id: 22,
-      title:  `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
+      title: `Aqlli Fitness bilaguzuk HUAWEI Band 7`,
       img: watch,
       img1: watch1,
       img2: watch2,
@@ -381,6 +381,27 @@ const Chilpage = () => {
   const imageList = [post.img, post.img1, post.img2];
   const [stopa, setStopa] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [styl, setStyl] = useState(
+    localStorage.getItem(`styl-${id}`) || "scale(1)"
+  );
+  const [bloc, setBloc] = useState(localStorage.getItem(`bloc-${id}`) || "");
+
+  const lik = () => {
+    setBloc("none");
+    localStorage.setItem(`bloc-${id}`, "none");
+  };
+
+  const lik1 = () => {
+    setStyl("scale(1.1)");
+    setBloc("block");
+    localStorage.setItem(`styl-${id}`, "scale(1.1)");
+    localStorage.setItem(`bloc-${id}`, "block");
+  };
+
+  useEffect(() => {
+    localStorage.setItem(`styl-${id}`, styl);
+    localStorage.setItem(`bloc-${id}`, bloc);
+  }, [id, styl, bloc]);
 
   const changeImage = (step) => {
     let newIndex = currentIndex + step;
@@ -498,8 +519,17 @@ const Chilpage = () => {
                   <img
                     src={like}
                     alt=""
-                    onClick={color}
-                    style={{ color: buttonColor }}
+                    className="lik"
+                    onClick={lik1}
+                    id="lik"
+                  />
+                  <img
+                    src={likiia}
+                    alt=""
+                    className="liki"
+                    id="liki"
+                    onClick={lik}
+                    style={{ transform: styl, display: bloc }}
                   />
                   <span> Istaklarga</span>
                 </p>

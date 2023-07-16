@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./biz.css";
 import aple from "../../assets/apple.svg";
 import gog from "../../assets/gog.svg";
@@ -11,47 +11,54 @@ import mac from "../../assets/savg/mac.svg";
 import go from "../../assets/savg/go.svg";
 import pas from "../../assets/savg/pas.svg";
 
-
-
-
 const BIz = () => {
-  const [widt, setWidt] = useState();
-  const [widt1, setWidt1] = useState();
-  const [widt2, setWidt2] = useState();
-  const [widtt, setWidtt] = useState();
-  const [widtt1, setWidtt1] = useState();
-  const [widtt2, setWidtt2] = useState();
+  const [widt, setWidt] = useState("1px");
+  const [widt1, setWidt1] = useState("1px");
+  const [widt2, setWidt2] = useState("1px");
+  const [widtt, setWidtt] = useState("0deg");
+  const [widtt1, setWidtt1] = useState("0deg");
+  const [widtt2, setWidtt2] = useState("0deg");
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsActive(window.scrollY > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const click = () => {
-    if (click) {
-      setWidt(`80px`);
-      setWidt1(`1px`);
-      setWidt2(`1px`);
-      setWidtt(`180deg`);
-      setWidtt1(`0deg`);
-      setWidtt2(`0deg`);
-    }
+    setWidt("80px");
+    setWidt1("1px");
+    setWidt2("1px");
+    setWidtt("180deg");
+    setWidtt1("0deg");
+    setWidtt2("0deg");
   };
+
   const click1 = () => {
-    if (click1) {
-      setWidt(`1px`);
-      setWidt2(`1px`);
-      setWidt1(`80px`);
-      setWidtt(`0deg`);
-      setWidtt1(`180deg`);
-      setWidtt2(`0deg`);
-    }
+    setWidt("1px");
+    setWidt2("1px");
+    setWidt1("80px");
+    setWidtt("0deg");
+    setWidtt1("180deg");
+    setWidtt2("0deg");
   };
+
   const click2 = () => {
-    if (click2) {
-      setWidt(`1px`);
-      setWidt1(`1px`);
-      setWidt2(`80px`);
-      setWidtt(`0deg`);
-      setWidtt1(`0deg`);
-      setWidtt2(`180deg`);
-    }
+    setWidt("1px");
+    setWidt1("1px");
+    setWidt2("80px");
+    setWidtt("0deg");
+    setWidtt1("0deg");
+    setWidtt2("180deg");
   };
+
   return (
     <div>
       <div className="bcon">
@@ -59,7 +66,12 @@ const BIz = () => {
           <p>
             <b className="no" onClick={click}>
               Biz haqimizda{" "}
-              <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt})` }}/>
+              <img
+                src={pas}
+                alt=""
+                className="noimg"
+                style={{ transform: `rotate(${widtt})` }}
+              />
             </b>
             <b className="no1">Biz haqimizda</b>
           </p>
@@ -72,7 +84,12 @@ const BIz = () => {
           <p>
             <b className="no" onClick={click1}>
               Foydalanuvchilarga{" "}
-            <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt1})` }}/>
+              <img
+                src={pas}
+                alt=""
+                className="noimg"
+                style={{ transform: `rotate(${widtt1})` }}
+              />
             </b>
             <b className="no1">Foydalanuvchilarga</b>
           </p>
@@ -87,7 +104,12 @@ const BIz = () => {
             <b className="no1">Tadbirkorlarga </b>
             <b className="no" onClick={click2}>
               Tadbirkorlarga
-              <img src={pas} alt=""  className="noimg"   style={{ transform: `rotate(${widtt2})` }}/>
+              <img
+                src={pas}
+                alt=""
+                className="noimg"
+                style={{ transform: `rotate(${widtt2})` }}
+              />
             </b>
           </p>
           <div className="vp" style={{ height: widt2 }}>
@@ -101,7 +123,6 @@ const BIz = () => {
           </p>
           <div className="p">
             <a href="https://apps.apple.com/ru/app/uzum-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD/id1640483056">
-            
               <div className="ap">
                 <img src={aple} alt="" /> <p className="a"> AppStore </p>
               </div>
@@ -110,9 +131,7 @@ const BIz = () => {
               </div>
             </a>
             <a href="https://play.google.com/store/apps/details?id=uz.uzum.app">
-          
               <div className="go">
-               
                 <img src={gog} alt="" style={{ marginLeft: "20px" }} />
                 <p>Google Play</p>
               </div>
@@ -146,8 +165,8 @@ const BIz = () => {
         </p>
       </div>
       <a href="#">
-        <div className="tepaga">
-        <img src={tepa} alt="" />
+        <div className={`tepaga ${isActive ? 'activ' : ''}`}>
+          <img src={tepa} alt="" />
         </div>
       </a>
     </div>

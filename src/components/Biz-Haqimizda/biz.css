@@ -411,7 +411,7 @@ margin-top: 8px;
     height: 50px;
     position: fixed;
     right: 35px;
-    bottom: 60px;
+    bottom: 0px;
     border-radius: 50%;
     display: flex;
     font-size: 28px;
@@ -419,7 +419,16 @@ margin-top: 8px;
     justify-content: center;
     color: white;
     z-index: 2;
+    opacity: 0;
+    transition: .3s;
 }
+
+.tepaga.activ{
+    bottom: 60px;
+    opacity: 1;
+}
+
+
 
 
 html{

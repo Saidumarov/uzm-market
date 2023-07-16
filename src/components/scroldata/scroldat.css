@@ -153,11 +153,19 @@
 
 @media screen and (max-width:550px) {
 
-    .swiper-slide .data1-itme .wrr .lik,
-    .liki {
+    .swiper-slide .data1-itme .wrr ,
+    #liki {
 
 
-        margin-left: 35%;
+      left: 35%;
+
+
+    }
+    .swiper-slide .data1-itme .wrr ,
+    #lik {
+
+
+        left: 35%;
 
 
     }
@@ -165,11 +173,19 @@
 
 @media screen and (max-width:513px) {
 
-    .swiper-slide .data1-itme .wrr .lik,
-    .liki {
+    .swiper-slide .data1-itme .wrr 
+    #liki {
 
 
-        margin-left: 35%;
+        left: 35%;
+
+
+    }
+    .swiper-slide .data1-itme .wrr 
+    #lik {
+
+
+        left: 35%;
 
 
     }
@@ -186,17 +202,7 @@
 
 }
 
-@media screen and (max-width:450px) {
 
-    .swiper-slide .data1-itme .wrr .lik,
-    .liki {
-
-
-        margin-left: 65%;
-
-
-    }
-}
 
 
 

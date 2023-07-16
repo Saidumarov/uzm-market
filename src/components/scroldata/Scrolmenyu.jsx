@@ -32,11 +32,11 @@ const Scrolmenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
 
   return (
     <div className="wrr">
-      <img src={like} alt="" className="lik" onClick={lik1} />
+      <img src={like} alt="" className="lik" onClick={lik1} id="lik" />
       <img
         src={liki}
         alt=""
-        className="liki"
+        className="liki" id="liki"
         onClick={lik}
         style={{ transform: styl, display: bloc }}
       />
