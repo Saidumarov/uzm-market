@@ -80,6 +80,7 @@
     font-family: sans-serif;
     /* font-size: 14px */
 }
+
 .uz p {
     padding-left: 5px;
 }
@@ -267,6 +268,128 @@ input {
     cursor: pointer;
 }
 
+
+/*  bar-menyu tel */
+
+.mar-itme-login {
+    width: 100%;
+    height: 100%;
+    background-color: #14141541;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.mar-itme-login.activ {
+    display: block;
+}
+
+
+.bar-login {
+    width: 400px;
+    height: 460px;
+    background-color: white;
+    position: fixed;
+    bottom: -200px;
+    border-radius: 8px;
+    transition: .5s;
+    z-index: 0;
+    opacity: 0;
+
+
+}
+
+.barr {
+    display: flex;
+    justify-content: center;
+}
+
+.bar-login.activ {
+    bottom: 150px;
+    z-index: 105;
+    opacity: 1;
+    transition: .4s;
+
+}
+
+.hbar {
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.pbar {
+    font-family: sans-serif;
+    padding: 15px 0 0 0;
+    margin-left: -28px;
+    text-align: center;
+}
+
+.telinput {
+    width: 80%;
+    padding-left: 20px;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+    background-color: #F8F8F8;
+    width: 320px;
+    height: 45px;
+    display: block;
+}
+
+.hbar1 {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+.sabmit {
+    width: 320px;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    background-color: #7000FF;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+
+.sabmit:hover{
+    background-color: #6000df;
+
+}
+.sbar {
+    color: #3333CC;
+    text-align: center;
+    display: block;
+}
+
+.x1{
+    width: 30px;
+    height: 30px;border-radius: 50%;
+    background-color:#D1D2D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    position: absolute;
+    top: 40px;
+}
+
+/*  bar-menyu tel */
 /* efkt */
 .efkt {
     width: 0px;
@@ -287,6 +410,7 @@ input {
     width: 90%;
     display: none;
 }
+
 .efkt1 {
     width: 0px;
     height: 1.6px;
@@ -317,7 +441,8 @@ input {
     transition: .4s;
 
 }
-.bar-menyu{
+
+.bar-menyu {
     display: none;
 }
 
@@ -525,12 +650,13 @@ input {
     .nav p {
         display: none;
     }
+
     .bar img {
         width: 30px;
         display: block;
     }
 
-    .bar-x img{
+    .bar-x img {
         width: 30px;
     }
 
@@ -543,6 +669,29 @@ input {
 
     }
 
+    
+.bar-login {
+    width:100%;
+    height: 460px;
+    background-color: white;
+    position: fixed;
+    bottom: -100px;
+    border-radius: 8px;
+    transition: .5s;
+    z-index: 0;
+    opacity: 0;
+
+
+}
+
+
+.bar-login.activ {
+    bottom: 0px;
+    z-index: 105;
+    opacity: 1;
+    transition: .4s;
+
+}
     .bar1 {
         width: 30px;
         height: 2.4px;
@@ -561,40 +710,42 @@ input {
         top: 0;
         transition: .4s;
         display: block;
-        
+
     }
 
-    .barlin{
+    .barlin {
         display: flex;
         align-items: center;
         background-color: white;
-        
+
     }
 
-    .katalog1{
+    .katalog1 {
         display: flex;
         align-items: center;
         background-color: white;
         height: 55px;
         width: 100%;
         margin-top: 8px;
-     
+
     }
 
-    .katim{
+    .katim {
         margin-left: 25px;
     }
 
-    .katim1{
+    .katim1 {
         position: absolute;
         right: 25px;
-     
+
     }
-    .katalog1 p{
+
+    .katalog1 p {
         font-size: 14px;
         padding-left: 8px;
         color: #3333CC;
     }
+
     .bar-x {
         width: 50px;
         height: 50px;
@@ -605,19 +756,19 @@ input {
 
     }
 
-    .kirsh1{
+    .kirsh1 {
         width: 155px;
         position: absolute;
         right: 20px;
         display: grid;
         grid-template-columns: auto auto auto;
         justify-content: space-between;
-     font-size: 15px;
-       
+        font-size: 15px;
+
     }
 
     .barx {
-        width:24px;
+        width: 24px;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.753);
         transform: rotate(-45deg);
@@ -626,7 +777,7 @@ input {
     }
 
     .barx1 {
-        width:24px;
+        width: 24px;
         height: 2px;
         background-color: rgba(0, 0, 0, 0.753);
         transform: rotate(45deg);
@@ -668,14 +819,23 @@ input {
         display: none;
     }
 
-    .bar-man{
+    .bar-man {
         width: 100%;
         /* height: 100px; */
         background-color: white;
         margin-top: 8px;
     }
 
-    .biz ,  .hamkor , .ilova , .email , .savol1 , .xarit , .joyla , .sar , .buy , .til{
+    .biz,
+    .hamkor,
+    .ilova,
+    .email,
+    .savol1,
+    .xarit,
+    .joyla,
+    .sar,
+    .buy,
+    .til {
         display: flex;
         padding-top: 12px;
         font-size: 13.5px;
@@ -684,16 +844,16 @@ input {
         align-items: center;
     }
 
-    .hamkor{
+    .hamkor {
         padding-bottom: 20px;
     }
 
-    .bar-p{
+    .bar-p {
         padding-left: 11px;
         color: #141415;
     }
 
-    .ilova img{
+    .ilova img {
         width: 25px;
         margin-right: 10px;
     }
@@ -774,11 +934,11 @@ input {
         margin-right: 10px;
 
     }
-    
-.bar img {
-    width: 90%;
-    display: block;
-}
+
+    .bar img {
+        width: 90%;
+        display: block;
+    }
 }
 
 @media screen and (max-width:700px) {

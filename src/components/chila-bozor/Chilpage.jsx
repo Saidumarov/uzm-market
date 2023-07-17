@@ -44,7 +44,7 @@ import sam1 from "../../assets/lampa/sam1.jpg";
 import lampa from "../../assets/lampa/lampa.jpg";
 import lampa1 from "../../assets/lampa/lampa1.jpg";
 import lampa2 from "../../assets/lampa/lampa2.jpg";
-import likiia from '../../assets/savg/lik.png'
+import likiia from "../../assets/savg/lik.png";
 
 const Chilpage = () => {
   const { id } = useParams();
@@ -516,18 +516,11 @@ const Chilpage = () => {
                   )<span className="sapan">21000 ta buyurtma</span>
                 </p>
                 <p className="istak">
-                  <img
-                    src={like}
-                    alt=""
-                    className="lik"
-                    onClick={lik1}
-                    id="lik"
-                  />
+                  <img src={like} alt="" className="lik" onClick={lik1} />
                   <img
                     src={likiia}
                     alt=""
                     className="liki"
-                    id="liki"
                     onClick={lik}
                     style={{ transform: styl, display: bloc }}
                   />

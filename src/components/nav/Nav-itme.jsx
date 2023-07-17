@@ -14,7 +14,9 @@ import xar from "../../assets/savg/xarita.svg";
 import savol from "../../assets/savg/suroq.svg";
 import email from "../../assets/savg/email.svg";
 import uz from "../../assets/savg/uz.svg";
-import ilova from "../../assets/ilova.png"
+import ilova from "../../assets/ilova.png";
+import x from "../../assets/savg/barx.svg";
+
 
 import { Link } from "react-router-dom";
 const NavItme = () => {
@@ -29,16 +31,44 @@ const NavItme = () => {
     }
   };
 
-  const [bar, setBar] = useState();
+
+  const [active, setActive] = useState(false);
+
+  const login = () => {
+    setActive(!active);
+  };
+
+  const [Bar, setBar] = useState();
+  const loginno = () => {
+    setActive(!active);
+  };
+  const loginnox = () => {
+    setActive(!active);
+  };
 
   return (
     <div>
+      <div
+        className={`mar-itme-login ${active ? " activ" : ""} `}
+        onClick={loginno}
+      ></div>
+      <div className="barr"> <div className={`bar-login ${active ? " activ" : ""} `}>
+        <div className="x1">
+          <img src={x} alt=""  onClick={loginnox}/>
+        </div>
+        <h1 className="hbar">Telefon raqamini kiriting</h1>
+        <p className="pbar">Tasdiqlash kodini SMS orqali yuboramiz</p>
+        <input type="text" placeholder="+998 00 000-00-00"  className="telinput"/>
+        <button className="sabmit">Kodni olish</button>
+        <p className="hbar1">Avtotizatsiyadan o'tish orqali siz </p><span className="sbar">shaxsiy ma'lumotlarni qayta ishlash siyosatiga rozilik bildirasiz</span>
+        
+        </div></div>
       <div className="navitme">
         <div className="bar" onClick={() => setBar(`0%`)}>
           <img src={bara} alt="" />
         </div>
 
-        <div className="bar-menyu" style={{ left: bar }}>
+        <div className="bar-menyu " style={{left:Bar}}>
           <div className="barlin">
             <div className="bar-x" onClick={() => setBar(`-100%`)}>
               <img src={barax} alt="" />
@@ -74,15 +104,16 @@ const NavItme = () => {
               <img src={savol} alt="" />
               <p className="bar-p">Savol-javoblar</p>
             </div>
-         <a href="https://t.me/saidumarov_006">
-         <div className="email">
-              <img src={email} alt="" />
-              <p className="bar-p">Biz bilan bog'lanish</p>
-            </div>
-         </a>
+            <a href="https://t.me/saidumarov_006">
+              <div className="email">
+                <img src={email} alt="" />
+                <p className="bar-p">Biz bilan bog'lanish</p>
+              </div>
+            </a>
             <div className="ilova">
               <img src={ilova} alt="" />
-              Uzum ilovasi</div>
+              Uzum ilovasi
+            </div>
             <div className="til">
               <img src={uz} alt="" />
               <p className="bar-p">Sayt tili: Оʻzbekcha</p>
@@ -97,7 +128,6 @@ const NavItme = () => {
               <p className="bar-p">Hamkorlarga</p>
               <img src={pas} alt="" className="katim1" />
             </div>
-           
           </div>
         </div>
         <div className="uzm">
@@ -120,7 +150,7 @@ const NavItme = () => {
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <div className="kirsh">
+        <div className="kirsh" onClick={login}>
           <img src={kirish} alt="" />
           <p> Kirish</p>
         </div>

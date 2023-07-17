@@ -1,4 +1,4 @@
-import  "./scroldat.css"
+import "./scroldat.css";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import baho from "../../assets/baho.svg";
@@ -29,14 +29,14 @@ const Scrolmenyu = ({ id, body, title, img, narx, narxno, oyiga }) => {
     localStorage.setItem(`bloc-${id}`, bloc);
   }, [id, styl, bloc]);
 
-
   return (
     <div className="wrr">
       <img src={like} alt="" className="lik" onClick={lik1} id="lik" />
       <img
         src={liki}
         alt=""
-        className="liki" id="liki"
+        className="liki"
+        id="liki"
         onClick={lik}
         style={{ transform: styl, display: bloc }}
       />
