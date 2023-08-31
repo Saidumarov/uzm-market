@@ -7,7 +7,7 @@ import Chilpage from "./components/chila-bozor/Chilpage";
 
 function App() {
   return (
-    <div className="app">
+    <div className="app" >
  
       <BrowserRouter>
         <Routes>
